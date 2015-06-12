@@ -52,7 +52,7 @@
 	<script src = "lib/fadeUpDown.js"></script>-->
 	<script src = "lib/modernizr.custom.js"></script>
 	<script>
-		$(function(){
+		$(window).load(function(){
 			$('#questions').fadeMover({
 				'effectType':1,
 				'inSpeed':800,

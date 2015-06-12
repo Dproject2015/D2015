@@ -27,7 +27,7 @@ $(function(){
 		var voiceflag = TsukaOrTera();
 		if(voiceflag == "Tsukamoto"){
 			var voices = TsukaSound.length;
-			var num = Math.round(Math.random()*voices);
+			var num = Math.floor(Math.random()*voices);
 			var soundedVoice = TsukaSound[num];
 			CreateAudio(soundedVoice,0);
 			var count = 0;
@@ -67,7 +67,7 @@ function sound(num){
 }
 //塚本先生か寺田先生か鳴らすか鳴らさないかを決める
 function TsukaOrTera(){
-	var val = Math.round(Math.random()*3);
+	var val = Math.floor(Math.random()*3);
 	/*switch(val){
 		case 0:
 			return "Tsukamoto";
