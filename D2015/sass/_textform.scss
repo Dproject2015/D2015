@@ -1,0 +1,25 @@
+input {
+  &[type="text"], &[type="number"] {
+    border: 0;
+    padding: 10px;
+    font-size: 1.3em;
+    color: #666;
+    border: solid 1px #ccc;
+    margin: 0px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
+  }
+  &[type="text"] {
+    width: 10em;
+  }
+  &[type="number"] {
+    width: 6em;
+  }
+  &[type="text"]:focus, &[type="number"]:focus {
+    border: solid 1px #EEA34A;
+  }
+}

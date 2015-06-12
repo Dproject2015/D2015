@@ -1,0 +1,10 @@
+$(function(){
+	$('#questions').fadeMover({
+			'effectType':1,
+			'inSpeed':800,
+			'outSpeed':800,
+			'inDelay':20,
+			'outDalay':0,
+			'nofadeOut':'nonmover'
+		});
+	});
