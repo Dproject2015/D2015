@@ -1,0 +1,32 @@
+$gray:#aaaaaa;
+$smallskip:10px;
+body{
+	background-color: $gray;
+	margin: 0;
+	#container{
+		width:100%;
+	}
+}
+#main{
+	width:800px;
+	margin:0 auto;
+	padding:3*$smallskip $smallskip;
+	background-color: #fff;
+}
+table{
+	width:100%;
+	border-collapse: collapse;
+	th{
+		padding: 6px;
+		text-align: left;
+		vertical-align: top;
+		color: #333;
+		background-color: #eee;
+		border: 1px solid #b9b9b9;
+	}
+	td{
+		padding: 6px;
+		background-color: #fff;
+		border: 1px solid #b9b9b9;
+	}
+}

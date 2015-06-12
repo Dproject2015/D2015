@@ -1,0 +1,32 @@
+body {
+  background-color: #aaaaaa;
+  margin: 0;
+}
+body #container {
+  width: 100%;
+}
+
+#main {
+  width: 800px;
+  margin: 0 auto;
+  padding: 30px 10px;
+  background-color: #fff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table th {
+  padding: 6px;
+  text-align: left;
+  vertical-align: top;
+  color: #333;
+  background-color: #eee;
+  border: 1px solid #b9b9b9;
+}
+table td {
+  padding: 6px;
+  background-color: #fff;
+  border: 1px solid #b9b9b9;
+}

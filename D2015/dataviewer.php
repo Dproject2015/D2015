@@ -42,43 +42,45 @@
 <html>
 <head>
 	<title>dataviewer</title>
+	<link rel="stylesheet" href="css/viewer.css">
 </head>
 
 <body>
-
-<div id = "main">
-	<form action = "dataviewer.php" method = "post">
-		データベース選択：
-		<select name = "db">
-			<option value="members" <?php if($db == "members"){ echo 'selected';}?>>members</option>
-			<option value="questions" <?php if($db == "questions"){ echo 'selected';}?>>questions</option>
-			<option value="tests" <?php if($db == "tests"){ echo 'selected';}?>>tests</option>
-			<option value="elements" <?php if($db == "elements"){ echo 'selected';}?>>elements</option>
-			<option value="scores" <?php if($db == "scores"){ echo 'selected';}?>>scores</option>
-		</select>
-		<input type = "submit" value="表示する">
-	</form>
-	<p><?php echo $sql;?></p>
-	<table border="1">
-		<?php
-			echo '<tr bgcolor="#CCCCCC">';
-			foreach($tableLabel[$db] as $value){
-				echo '<td>';
-				echo $value;
-				echo '</td>';
-			}
-			echo '</tr>';
-			while($row=mysql_fetch_assoc($query)){
+<div id = "container">
+	<div id = "main">
+		<form action = "dataviewer.php" method = "post">
+			データベース選択：
+			<select name = "db">
+				<option value="members" <?php if($db == "members"){ echo 'selected';}?>>members</option>
+				<option value="questions" <?php if($db == "questions"){ echo 'selected';}?>>questions</option>
+				<option value="tests" <?php if($db == "tests"){ echo 'selected';}?>>tests</option>
+				<option value="elements" <?php if($db == "elements"){ echo 'selected';}?>>elements</option>
+				<option value="scores" <?php if($db == "scores"){ echo 'selected';}?>>scores</option>
+			</select>
+			<input type = "submit" value="表示する">
+		</form>
+		<p id = "query">検索クエリ：　<span><?php echo $sql;?></span></p>
+		<table border="1">
+			<?php
 				echo '<tr>';
 				foreach($tableLabel[$db] as $value){
-					echo '<td>';
-					echo $row[$value];
-					echo '</td>';
+					echo '<th>';
+					echo $value;
+					echo '</th>';
 				}
 				echo '</tr>';
-			}
-		?>
-	</table>
+				while($row=mysql_fetch_assoc($query)){
+					echo '<tr>';
+					foreach($tableLabel[$db] as $value){
+						echo '<td>';
+						echo $row[$value];
+						echo '</td>';
+					}
+					echo '</tr>';
+				}
+			?>
+		</table>
+	</div>
 </div>
 </body>
 </html>
