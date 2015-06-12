@@ -51,7 +51,7 @@
 	<div id = "main">
 		<div id = "questions">
 			<h1>S2 Sorting Hat</h1>
-			<p>あなたは誰？</p>
+			<p>君は誰だ？</p>
 			<form action = "question01.php" method="post" name = "basicInfo" class = "ac-custom ac-radio ac-checkmark">
 				<ol id = "qList">
 					<li>名前：<input type = "text" name = "name" class="required"></li>
@@ -69,7 +69,7 @@
 			<div id="submit">
 				<!--リンクでpostする-->
 				<!--音声も付与-->
-				<a href="javascript:basicInfo.submit()" class="button">Sorting start -></a>
+				<a href="javascript:basicInfo.submit()" class="button">よろしい，では組分けをはじめよう．</a>
 				<audio id = "sound-file" preload="auto">
 					<source src = "sound/se/voices/naruhodo.mp3" type = "audio/mp3">
 				</audio>

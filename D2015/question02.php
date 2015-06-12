@@ -54,7 +54,7 @@
 	<div id = "main">
 		<div id = "questions">
 			<h1>Answer Questions</h1>
-			<p class = "intro">以下の質問に5段階で回答してください。<br>
+			<p class = "intro">以下の質問に5段階で回答するのだ．<br>
 			（<span class="round">1</span> : あてはまらない---<span class="round">3</span> : どちらでもない---<span class="round">5</span> : あてはまる）</p>
 			<!--<p>Answer questions</p>-->
 			<form action = "question03.php" method="post" name = "basicInfo" class = "ac-custom ac-radio ac-checkmark">
@@ -113,7 +113,7 @@
 			<div id="submit">
 				<!--リンクでpostする-->
 				<!--音声も付与-->
-				<a href="javascript:basicInfo.submit()" class="button">Next questions -></a>
+				<a href="javascript:basicInfo.submit()" class="button">ふむふむ，次の質問にも答えるのだ．</a>
 			</div>
 		</div>
 	</div>
