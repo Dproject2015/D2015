@@ -57,12 +57,12 @@ function CreateAudio(name,num){
 	var audio = document.createElement("audio");
 	//ID要素を設定
 	audio.id="voice";
-	var location = path + dir + name;
+	//var location = path;
 	//src要素を設定
 	if(audio.canPlayType("audio/mp3")){
-		audio.src=location+".mp3";
+		audio.src=path + dir + "mp3/"+name+".mp3";
 	}else if(audio.canPlayType("audio/wav")){
-		audio.src=location+".wav";
+		audio.src=path + dir + "wav/"+name+".wav";
 	}
 	//bodyの最も後ろに[audio]を生成
 	document.body.appendChild(audio);
