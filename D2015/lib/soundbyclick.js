@@ -25,7 +25,7 @@ $(function(){
 			var voices = TsukaSound.length;
 			var num = Math.round(Math.random()*voices);
 			soundedVoice = TsukaSound[num];
-			CreateAudio(soundedVoice);
+			CreateAudio(soundedVoice,0);
 			var count = 0;
 			sound(count);
 			count = 1;
