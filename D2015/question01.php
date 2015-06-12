@@ -63,11 +63,12 @@
 			});
 		});
 	</script>
-	<!--音声再生-->
 	<!--全て入力されたらリンクを表示-->
 	<script src="lib/checkform.js"></script>
-	<script src="lib/soundbyclick.js"></script>
+	<!--音声再生-->
 	<!--ランダム再生-->
+	<script src="lib/soundbyclick.js"></script>
+	
 </head>
 
 <body>
