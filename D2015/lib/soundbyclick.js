@@ -4,6 +4,10 @@ $(function(){
 	var TsukaSerifu = ["あ～そうなん","え～","イリュージョン","さすが","ゴホゴホ","しんどいわ","それでか","すごいよ～","うわ～すごいな","わからん","はっはっは","ははは"];
 	$(":radio").change(function(event) {
 		/* Act on the event */
+		//もし#voiceがあれば削除
+		if($('#voice')[0]){
+			$('#voice').remove();
+		}
 		var target = $(event.target);
 		//ラジオボタンがチェックされたら
 		switch($(target).val()){
@@ -30,18 +34,6 @@ $(function(){
 			sound(count);
 			count = 1;
 		}
-		/*if($(target).val() == "3"){
-			//乱数発生
-			var val = Math.round(Math.random()*100);
-			if(val<=soundP){
-				//音声を鳴らす確率値以下なら
-				//audioタグを動的に生成
-				CreateAudio();
-				var count =0;
-				sound(count);
-				count =1;
-			}
-		}*/
 	});
 });
 function CreateAudio(name,num){
@@ -76,12 +68,13 @@ function sound(num){
 //塚本先生か寺田先生か鳴らすか鳴らさないかを決める
 function TsukaOrTera(){
 	var val = Math.round(Math.random()*3);
-	switch(val){
+	/*switch(val){
 		case 0:
 			return "Tsukamoto";
 		case 1:
 			return "Terada";
 		case 2:
 			return "none";
-	}
+	}*/
+	return "Tsukamoto";
 }
