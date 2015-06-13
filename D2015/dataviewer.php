@@ -59,11 +59,12 @@
 				<option value="elements" <?php if($db == "elements"){ echo 'selected';}?>>elements</option>
 				<option value="scores" <?php if($db == "scores"){ echo 'selected';}?>>scores</option>
 			</select>
-			<br>
+			<br><br>
 			<div id="additional">
 				mid:<input type="number" name="mid" min = "1">
 				qid<input type="number" name="qid" min ="1" max="16"> 
 			</div>
+			<br><br>
 			<input type = "submit" value="表示する">
 		</form>
 		<p id = "query">検索クエリ：　<span><?php echo $sql;?></span></p>

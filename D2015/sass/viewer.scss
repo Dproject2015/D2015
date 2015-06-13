@@ -13,6 +13,11 @@ body{
 	padding:3*$smallskip $smallskip;
 	background-color: #fff;
 }
+input{
+	&[type="number"]{
+		width:6em;
+	}
+}
 table{
 	width:100%;
 	border-collapse: collapse;
