@@ -43,6 +43,7 @@
 <head>
 	<title>dataviewer</title>
 	<link rel="stylesheet" href="css/viewer.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -57,6 +58,11 @@
 				<option value="elements" <?php if($db == "elements"){ echo 'selected';}?>>elements</option>
 				<option value="scores" <?php if($db == "scores"){ echo 'selected';}?>>scores</option>
 			</select>
+			<br>
+			<div id="additional">
+				mid:<input type="number" name="mid" min = "1">
+				qid<input type="number" name="qid" min ="1" max="16"> 
+			</div>
 			<input type = "submit" value="表示する">
 		</form>
 		<p id = "query">検索クエリ：　<span><?php echo $sql;?></span></p>
