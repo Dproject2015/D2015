@@ -44,6 +44,7 @@
 	<title>dataviewer</title>
 	<link rel="stylesheet" href="css/viewer.css">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="lib/checkform2.js"></script>
 </head>
 
 <body>
