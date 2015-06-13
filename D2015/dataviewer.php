@@ -52,7 +52,7 @@
 	<div id = "main">
 		<form action = "dataviewer.php" method = "post">
 			データベース選択：
-			<select name = "db">
+			<select name = "db" id="dbselect">
 				<option value="members" <?php if($db == "members"){ echo 'selected';}?>>members</option>
 				<option value="questions" <?php if($db == "questions"){ echo 'selected';}?>>questions</option>
 				<option value="tests" <?php if($db == "tests"){ echo 'selected';}?>>tests</option>
@@ -62,9 +62,28 @@
 			<br><br>
 			<div id="additional">
 				mid:<input type="number" name="mid" min = "1">
-				qid<input type="number" name="qid" min ="1" max="16"> 
+				eid:
+				<select name="eid">
+					<option value=""></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+				</select>
 			</div>
-			<br><br>
+			<br>
 			<input type = "submit" value="表示する">
 		</form>
 		<p id = "query">検索クエリ：　<span><?php echo $sql;?></span></p>
