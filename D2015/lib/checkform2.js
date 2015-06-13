@@ -1,9 +1,9 @@
 $(function(){
-	$(":number").attr("disabled","disabled");
+	$("#additional").attr("disabled","disabled");
 	$("select").change(function(event){
 		var target = $(event.target);
 		if($(target).val()=="scores"){
-			$(":number").removeAttr("disabled");
+			$("#additional").removeAttr("disabled");
 		}
 	});
 });
