@@ -3,7 +3,6 @@
 	$user = 's2pass';
 	$local = 'localhost';
 	$pass = 'thepass203';
-	//
 	$members = 'members';
 	$questions = 'questions';
 	$tests = 'tests';
