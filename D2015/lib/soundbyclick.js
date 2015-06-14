@@ -1,15 +1,17 @@
 $(function(){
 	var soundP = 70;
-	var TsukaSound = ["a-sounan","eee","illusion","sasuga","seki","sindoiwa","soredeka","sugoiyo","uwa-sugoina","wakaran","warai1","warai2"];
-	var TsukaSerifu = ["あ～そうなん","え～","イリュージョン","さすが","ゴホゴホ","しんどいわ","それでか","すごいよ～","うわ～すごいな","わからん","はっはっは","ははは"];
+	var TsukaSound = ["a-sounan","eee","illusion","sasuga","seki","sindoiwa","soredeka",
+	"sugoiyo","uwa-sugoina","wakaran","warai1","warai2"];
+	var TsukaSerifu = ["あ～そうなん","え～","イリュージョン","さすが","ゴホゴホ","しんどいわ","それでか",
+	"すごいよ～","うわ～すごいな","わからん","はっはっは","ははは"];
 	$(":radio").change(function(event) {
+		//ラジオボタンがチェックされたら
 		/* Act on the event */
 		//もし#voiceがあれば削除
 		if($('#voice')[0]){
 			$('#voice').remove();
 		}
 		var target = $(event.target);
-		//ラジオボタンがチェックされたら
 		switch($(target).val()){
 			case "1":
 			break;
@@ -24,12 +26,20 @@ $(function(){
 			default:
 			break;
 		}
+		//塚本先生ボイスor寺田先生ボイスor鳴らさないを決定
 		var voiceflag = TsukaOrTera();
+		//結果で条件分岐
 		if(voiceflag == "Tsukamoto"){
+			//塚本先生ボイスなら
+			//配列の長さを取得
 			var voices = TsukaSound.length;
+			//乱数で配列の要素番号をランダムに指定
 			var num = Math.floor(Math.random()*voices);
+			//num番目の文字列を取得（ファイル名）
 			var soundedVoice = TsukaSound[num];
+			//そのファイル名のaudioタグを生成
 			CreateAudio(soundedVoice,0);
+			//再生
 			var count = 0;
 			sound(count);
 			count = 1;
