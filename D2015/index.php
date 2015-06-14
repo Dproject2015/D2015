@@ -55,13 +55,13 @@
 			<form action = "question01.php" method="post" name = "basicInfo" class = "ac-custom ac-radio ac-checkmark">
 				<ol id = "qList">
 					<li>名前：<input type = "text" name = "name"></li>
-					<li>性別:
+					<li>性別：
 						<ul class = "q">
 							<li><input type = "radio" name = "gender" value = "男" id = "male"><label for="male">男</label></li>
 							<li><input type = "radio" name = "gender" value = "女" id = "female"><label for="female">女</label></li>
 						</ul>
 					</li>
-					<li>配属年: <input type = "number" id = "num" name = "year" value = "<?php echo date(Y);?>" min = "2004" max = "<?php echo date(Y);?>">年</li>
+					<li>配属年：<input type = "number" id = "num" name = "year" value = "<?php echo date(Y);?>" min = "2004" max = "<?php echo date(Y);?>">年</li>
 				</ol>
 				
 				<!--<input type = "submit" value = "Go next">-->
