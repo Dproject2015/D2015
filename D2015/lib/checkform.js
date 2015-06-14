@@ -3,22 +3,30 @@ $(function(){
 		//radioを監視、値が変更されたら発火
 		$(":radio").change(function(event) {
 			/* Act on the event */
-			if(checkForm()){
-				showLink();
-			}else{
-				hideLink();
-			}
+			check()
 		});
 		//textを監視、keyupされたら発火
 		$(":text").keyup(function(event) {
 			/* Act on the event */
-			if(checkForm()){
-				showLink();
-			}else{
-				hideLink();
-			}
+			check();
+		});
+		//numberを監視、keyupで発火
+		$("#num").keyup(function(event) {
+			/* Act on the event */
+			check();
+		});
+		$("#num").change(function(event) {
+			/* Act on the event */
+			check();
 		});
 	});
+	function check(){
+		if(checkForm()){
+			showLink();
+		}else{
+			hideLink();
+		}
+	}
 	//submit要素を出現させる
 	function showLink(){
 			$("#submit").fadeIn('normal');
@@ -36,6 +44,10 @@ $(function(){
 				flag=false;
 			}
 		});
+		if($("#num").val()==""){
+			//空白ならfalse;
+			flag = false;
+		}
 		//全てのradioボタンをチェック
 		//チェックされているラジオボタンの数をカウント
 		var $checkedCount = $(".q").find('input[type="radio"]:checked').size();
