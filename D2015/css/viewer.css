@@ -2,7 +2,6 @@ body {
   background-color: #aaaaaa;
   margin: 0;
 }
-
 body #container {
   width: 100%;
 }
@@ -22,7 +21,6 @@ table {
   width: 100%;
   border-collapse: collapse;
 }
-
 table th {
   padding: 6px;
   text-align: left;
@@ -31,7 +29,6 @@ table th {
   background-color: #eee;
   border: 1px solid #b9b9b9;
 }
-
 table td {
   padding: 6px;
   background-color: #fff;
