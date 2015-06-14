@@ -70,9 +70,6 @@
 				<!--リンクでpostする-->
 				<!--音声も付与-->
 				<a href="javascript:basicInfo.submit()" class="button">よろしい，では組分けをはじめよう．</a>
-				<audio id = "sound-file" preload="auto">
-					<source src = "sound/se/voices/naruhodo.mp3" type = "audio/mp3">
-				</audio>
 			</div>
 		</div>
 	</div>
