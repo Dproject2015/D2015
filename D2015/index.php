@@ -56,7 +56,7 @@
 				<ol id = "qList">
 					<li>名前：<input type = "text" name = "name"></li>
 					<li>性別：
-						<ul class = "q">
+						<ul class = "q vertical">
 							<li><input type = "radio" name = "gender" value = "男" id = "male"><label for="male">男</label></li>
 							<li><input type = "radio" name = "gender" value = "女" id = "female"><label for="female">女</label></li>
 						</ul>

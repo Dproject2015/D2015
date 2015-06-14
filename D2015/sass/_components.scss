@@ -8,7 +8,9 @@
     /*position: relative;*/
   }
 }
-
+.vertical{
+  display: inline-block;
+}
 #qList {
   > li {
     padding-top: 0px;

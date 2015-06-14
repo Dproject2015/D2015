@@ -9,6 +9,10 @@
   /*position: relative;*/
 }
 
+.vertical {
+  display: inline-block;
+}
+
 #qList {
   padding: 0;
 }
