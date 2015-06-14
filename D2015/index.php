@@ -61,7 +61,7 @@
 							<li><input type = "radio" name = "gender" value = "女" id = "female"><label for="female">女</label></li>
 						</ul>
 					</li>
-					<li>配属年: <input type = "number" name = "year" value = "<?php echo date(Y);?>" min = "2004" max = "<?php echo date(Y);?>" class="required">年</li>
+					<li>配属年: <input type = "number" name = "year" placeholder = "<?php echo date(Y);?>" min = "2004" max = "<?php echo date(Y);?>" class="required">年</li>
 				</ol>
 				
 				<!--<input type = "submit" value = "Go next">-->
@@ -70,9 +70,6 @@
 				<!--リンクでpostする-->
 				<!--音声も付与-->
 				<a href="javascript:basicInfo.submit()" class="button">よろしい，では組分けをはじめよう．</a>
-				<audio id = "sound-file" preload="auto">
-					<source src = "sound/se/voices/naruhodo.mp3" type = "audio/mp3">
-				</audio>
 			</div>
 		</div>
 	</div>
