@@ -1,9 +1,15 @@
 $(function(){
 	var soundP = 70;
+	//塚本先生ボイスファイル
 	var TsukaSound = ["a-sounan","eee","illusion","sasuga","seki","sindoiwa","soredeka",
 	"sugoiyo","uwa-sugoina","wakaran","warai1","warai2"];
 	var TsukaSerifu = ["あ～そうなん","え～","イリュージョン","さすが","ゴホゴホ","しんどいわ","それでか",
 	"すごいよ～","うわ～すごいな","わからん","はっはっは","ははは"];
+	//寺田先生ボイスファイル
+	var TeraSound = ["amajide","asonanya","barabarayana","funfun","hahaha","hai",
+	"haihai","haihai2","haihai3","haihai4","he","naruhodo","naruhodo2","naruhodo3","niiii","soyana","soyana2"];
+	var TeraSerifu = ["あ～まじで","あ、そうなんや","バラバラやな","ふんふん","ははは","は～い",
+	"はいはい","はいはい","はいはい","はいはい","へぇ～","なるほど","なるほど","なるほど","ん、いいいい","そうやな～","そうやな～"];
 	$(":radio").change(function(event) {
 		//ラジオボタンがチェックされたら
 		/* Act on the event */
@@ -32,14 +38,22 @@ $(function(){
 		if(voiceflag == "Tsukamoto"){
 			//塚本先生ボイスなら
 			//配列の長さを取得
-			var voices = TsukaSound.length;
+			var TsukaVoices = TsukaSound.length;
 			//乱数で配列の要素番号をランダムに指定
-			var num = Math.floor(Math.random()*voices);
+			var TsukaNum = Math.floor(Math.random()*TsukaVoices);
 			//num番目の文字列を取得（ファイル名）
-			var soundedVoice = TsukaSound[num];
+			var TsukaSoundedVoice = TsukaSound[TsukaNum];
 			//そのファイル名のaudioタグを生成
-			CreateAudio(soundedVoice,0);
+			CreateAudio(TsukaSoundedVoice,0);
 			//再生
+			var count = 0;
+			sound(count);
+			count = 1;
+		}else if(voiceflag=="Terada"){
+			var TeraVoices = TeraSound.length;
+			var TeraNum = Math.floor(Math.random()*TeraVoices);
+			var TeraSoundVoices = TeraSound[TeraNum];
+			CreateAudio(TeraSoundVoices,1);
 			var count = 0;
 			sound(count);
 			count = 1;
@@ -77,14 +91,13 @@ function sound(num){
 }
 //塚本先生か寺田先生か鳴らすか鳴らさないかを決める
 function TsukaOrTera(){
-	var val = Math.floor(Math.random()*3);
-	/*switch(val){
+	var val = Math.floor(Math.random()*2);
+	switch(val){
 		case 0:
 			return "Tsukamoto";
 		case 1:
 			return "Terada";
 		case 2:
 			return "none";
-	}*/
-	return "Tsukamoto";
+	}
 }
