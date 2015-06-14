@@ -9,6 +9,8 @@
 	<link rel = "stylesheet" href = "css/textform.css">
 	<link rel = "stylesheet" href = "css/component.css">-->
 	<link rel="stylesheet" href="css/main.css">
+	<!--ファビコン-->
+	<link rel="shortcut icon" href="http://cse.eedept.kobe-u.ac.jp/wp-content/uploads/2012/05/eigoUri1.png" type="image/x-icon">
 	<!--フォント-->
 	<link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900' rel='stylesheet' type='text/css'>
 	
@@ -51,7 +53,7 @@
 	<div id = "main">
 		<div id = "questions">
 			<h1>S2 Sorting Hat</h1>
-			<p>君は誰だ？</p>
+			<p>さて，君は誰なのだ？</p>
 			<form action = "question01.php" method="post" name = "basicInfo" class = "ac-custom ac-radio ac-checkmark">
 				<ol id = "qList">
 					<li>名前：<input type = "text" name = "name"></li>
