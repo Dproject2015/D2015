@@ -18,20 +18,9 @@ $(function(){
 			$('#voice').remove();
 		}
 		var target = $(event.target);
-		switch($(target).val()){
-			case "1":
-			break;
-			case "2":
-			break;
-			case "3":
-			break;
-			case "4":
-			break;
-			case "5":
-			break;
-			default:
-			break;
-		}
+		//選択肢の番号によって分岐させる場合
+		var selectedNumber = Number($(target).val());
+
 		//塚本先生ボイスor寺田先生ボイスor鳴らさないを決定
 		var voiceflag = TsukaOrTera();
 		//結果で条件分岐
@@ -42,9 +31,9 @@ $(function(){
 			//乱数で配列の要素番号をランダムに指定
 			var TsukaNum = Math.floor(Math.random()*TsukaVoices);
 			//num番目の文字列を取得（ファイル名）
-			var TsukaSoundedVoice = TsukaSound[TsukaNum];
+			var TsukaSoundedVoice = "tsukamoto/"+TsukaSound[TsukaNum];
 			//そのファイル名のaudioタグを生成
-			CreateAudio(TsukaSoundedVoice,0);
+			CreateAudio(TsukaSoundedVoice);
 			//再生
 			var count = 0;
 			sound(count);
@@ -52,22 +41,16 @@ $(function(){
 		}else if(voiceflag=="Terada"){
 			var TeraVoices = TeraSound.length;
 			var TeraNum = Math.floor(Math.random()*TeraVoices);
-			var TeraSoundVoices = TeraSound[TeraNum];
-			CreateAudio(TeraSoundVoices,1);
+			var TeraSoundVoices = "terada/"+TeraSound[TeraNum];
+			CreateAudio(TeraSoundVoices);
 			var count = 0;
 			sound(count);
 			count = 1;
 		}
 	});
 });
-function CreateAudio(name,num){
+function CreateAudio(name){
 	var path = "sound/se/voices/";
-	var dir = "";
-	if(num == 0){
-		dir = "tsukamoto/";
-	}else{
-		dir = "terada/";
-	}
 	//var tsuka = "tsukamoto";
 	//var tera = "terada";
 	var audio = document.createElement("audio");
@@ -76,9 +59,9 @@ function CreateAudio(name,num){
 	//var location = path;
 	//src要素を設定
 	if(audio.canPlayType("audio/mp3")){
-		audio.src=path + dir + "mp3/"+name+".mp3";
+		audio.src=path + "mp3/" + name + ".mp3";
 	}else if(audio.canPlayType("audio/wav")){
-		audio.src=path + dir + "wav/"+name+".wav";
+		audio.src=path + "wav/" + name + ".wav";
 	}
 	//bodyの最も後ろに[audio]を生成
 	document.body.appendChild(audio);
@@ -99,5 +82,22 @@ function TsukaOrTera(){
 			return "Terada";
 		case 2:
 			return "none";
+	}
+}
+//選択番号によって鳴らす音を決定する
+function SoundFromNumber(num){
+	switch(num){
+		case 1:
+			break;
+		case 2:
+			break;
+		case 3:
+			break;
+		case 4:
+			break;
+		case 5:
+			break;
+		default:
+			break;
 	}
 }
