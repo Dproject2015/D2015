@@ -53,18 +53,8 @@
 	<!--<script src = "lib/jquery.animsition.min.js"></script>
 	<script src = "lib/fadeUpDown.js"></script>-->
 	<script src = "lib/modernizr.custom.js"></script>
-	<script>
-		$(window).load(function(){
-			$('#questions').fadeMover({
-				'effectType':1,
-				'inSpeed':800,
-				'outSpeed':800,
-				'inDelay':20,
-				'outDalay':0,
-				'nofadeOut':'nonmover'
-			});
-		});
-	</script>
+	<!--フェードイン-->
+	<script src="lib/fade.js"></script>
 	<!--全て入力されたらリンクを表示-->
 	<script src="lib/checkform.js"></script>
 	<!--音声再生-->

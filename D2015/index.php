@@ -19,18 +19,8 @@
 	<script type= "text/javascript" src = "lib/footerFixed.js"></script>
 	<script src="lib/jquery.fademover.js"></script>
 	<script src = "lib/modernizr.custom.js"></script>	
-	<script>
-		$(function(){
-			$('#questions').fadeMover({
-				'effectType':1,
-				'inSpeed':800,
-				'outSpeed':800,
-				'inDelay':20,
-				'outDalay':0,
-				'nofadeOut':'nonmover'
-			});
-		});
-	</script>
+	<!--フェードイン-->
+	<script src="lib/fade.js"></script>
 	<!--全て入力されたらリンクを表示-->
 	<script src="lib/checkform.js"></script>
 	<!--音声再生-->
@@ -53,7 +43,7 @@
 	<div id = "main">
 		<div id = "questions">
 			<h1>S2 Sorting Hat</h1>
-			<p>さて，君は誰なのだ？</p>
+			<p>まず君が誰なのか教えてくれ．</p>
 			<form action = "question01.php" method="post" name = "basicInfo" class = "ac-custom ac-radio ac-checkmark">
 				<ol id = "qList">
 					<li>名前：<input type = "text" name = "name"></li>
