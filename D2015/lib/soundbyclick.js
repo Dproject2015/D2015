@@ -2,14 +2,10 @@ $(function(){
 	var soundP = 70;
 	//塚本先生ボイスファイル
 	var TsukaSound = ["a-sounan","eee","illusion","sasuga","seki","sindoiwa","soredeka",
-	"sugoiyo","uwa-sugoina","wakaran","warai1","warai2"];
-	var TsukaSerifu = ["あ～そうなん","え～","イリュージョン","さすが","ゴホゴホ","しんどいわ","それでか",
-	"すごいよ～","うわ～すごいな","わからん","はっはっは","ははは"];
+	"sugoiyo","uwa-sugoina","wakaran","warai1","warai2","ahahasoredeka","akanwa","aso","asonan","asugoina","dream","eee2","iine_nakanaka","takaine"];
 	//寺田先生ボイスファイル
 	var TeraSound = ["amajide","asonanya","barabarayana","funfun","hahaha","hai",
 	"haihai","haihai2","haihai3","haihai4","he","naruhodo","naruhodo2","naruhodo3","niiii","soyana","soyana2"];
-	var TeraSerifu = ["あ～まじで","あ、そうなんや","バラバラやな","ふんふん","ははは","は～い",
-	"はいはい","はいはい","はいはい","はいはい","へぇ～","なるほど","なるほど","なるほど","ん、いいいい","そうやな～","そうやな～"];
 	$(":radio").change(function(event) {
 		//ラジオボタンがチェックされたら
 		/* Act on the event */
