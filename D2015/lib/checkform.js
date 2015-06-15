@@ -29,13 +29,11 @@ $(function(){
 	}
 	//submit要素を出現させる
 	function showLink(){
-			$("#submit:after").fadeIn(500);
-			$("#submit:before").fadeIn(700);
-			$("#submit").fadeIn(900);
+			$("#submit").fadeIn(500);
 		}
 	//submit要素を隠す
 	function hideLink(){
-			$("#submit").hide();
+			$("#submit").fadeOut(500);
 		}
 	function checkForm(){
 		var flag=true;
