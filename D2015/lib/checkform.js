@@ -29,7 +29,9 @@ $(function(){
 	}
 	//submit要素を出現させる
 	function showLink(){
-			$("#submit").fadeIn('normal');
+			$("#submit:after").fadeIn(500);
+			$("#submit:before").fadeIn(700);
+			$("#submit").fadeIn(900);
 		}
 	//submit要素を隠す
 	function hideLink(){
