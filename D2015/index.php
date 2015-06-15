@@ -43,7 +43,7 @@
 	<div id = "main">
 		<div id = "questions">
 			<h1>S2 Sorting Hat</h1>
-			<p>さて君は誰なのか教えていただけますかな？</p>
+			<p>まずは君が誰なのか教えてもらえるかな？</p>
 			<form action = "question01.php" method="post" name = "basicInfo" class = "ac-custom ac-radio ac-checkmark">
 				<ol id = "qList">
 					<li>名前：<input type = "text" name = "name"></li>
