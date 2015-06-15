@@ -1,9 +1,9 @@
-@mixin base_element{
-  -webkit-transition: 0.5s;
-     -moz-transition: 0.5s;
-     -o-transition: 0.5s;
-     -ms-transition: 0.5s;
-     transition: 0.5s;
+@mixin base_element($time:0.5s){
+  -webkit-transition: $time;
+     -moz-transition: $time;
+     -o-transition: $time;
+     -ms-transition: $time;
+     transition: $time;
      background: $alphaWhite;     
 }
 @mixin hover_design{
@@ -17,9 +17,9 @@
   padding: 0 15px;
   width: auto;
   min-width: 115px;
-  height: 50px;
+  /*height: 50px;*/
   color:$koge;
-  line-height: 50px;
+  /*line-height: 50px;*/
   text-align: center;
   border-radius: 50px;
   z-index: 0;
@@ -33,19 +33,20 @@
       margin-right: 0;
       display: block;
       border-radius: 50%;
-      @include base_element;
      }
     &:before{
       top: -17px;
       left:15px;
       width: 15px;
       height: 15px;
+      @include base_element;
     }
     &:after{
       top:-25px;
       left: 25px;
       width: 8px;
       height: 8px;
+      @include base_element;
     }
   &:hover{
     @include hover_design;

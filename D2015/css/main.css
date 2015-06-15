@@ -315,9 +315,9 @@ input[type="text"]:focus, input[type="number"]:focus {
   padding: 0 15px;
   width: auto;
   min-width: 115px;
-  height: 50px;
+  /*height: 50px;*/
   color: #564539;
-  line-height: 50px;
+  /*line-height: 50px;*/
   text-align: center;
   border-radius: 50px;
   z-index: 0;
@@ -337,6 +337,12 @@ input[type="text"]:focus, input[type="number"]:focus {
   margin-right: 0;
   display: block;
   border-radius: 50%;
+}
+.button:before {
+  top: -17px;
+  left: 15px;
+  width: 15px;
+  height: 15px;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -o-transition: 0.5s;
@@ -344,17 +350,17 @@ input[type="text"]:focus, input[type="number"]:focus {
   transition: 0.5s;
   background: rgba(255, 255, 255, 0.6);
 }
-.button:before {
-  top: -17px;
-  left: 15px;
-  width: 15px;
-  height: 15px;
-}
 .button:after {
   top: -25px;
   left: 25px;
   width: 8px;
   height: 8px;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  transition: 0.5s;
+  background: rgba(255, 255, 255, 0.6);
 }
 .button:hover {
   background: #564539;
