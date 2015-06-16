@@ -1,372 +1,67 @@
-.q {
-  height: 40px;
-}
-.q li {
-  margin-left: 80px;
-  /*list-style-type:none;*/
-  display: inline-block;
-  padding-top: 0;
-  /*position: relative;*/
-}
+/*
+Error: Invalid Windows-31J character "\xE6"
+        on line 8 of C:/test/D2015/sass/_mycss.scss
+        from line 2 of C:\test\D2015\sass\main.scss
 
-.vertical {
-  display: inline-block;
-}
+3: $smallSkip:10px;
+4: $gray:rgba(0, 0, 0, 0.5);
+5: $alphaWhite:rgba(255,255,255,0.6);
+6: $clearColor:rgba(0,0,0,0);
+7: $koge:#564539;
+8: $mFont:'Cinzel Decorative', cursive,'游明朝', YuMincho, 'ヒラギノ明朝 ProN W3', 'Hiragino Mincho ProN', 'メイリオ', Meiryo, serif;
+9: html {
+10:   height: 100%;
+11: }
+12: 
+13: body {
 
-#qList {
-  padding: 0;
-}
-#qList > li {
-  padding-top: 0px;
-  /*position:relative;*/
-}
-#qList ul {
-  /*top:-10px;*/
-  /*position:absolute;*/
-}
-
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-*:after, *::before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.ac-custom {
-  /*padding: 0 3em;*/
-  max-width: 900px;
-  margin: 0;
-}
-.ac-custom h2 {
-  font-size: 3em;
-  font-weight: 300;
-  padding: 0 0 0.5em;
-  margin: 0 0 30px;
-}
-.ac-custom ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  max-width: 800px;
-}
-.ac-custom li, .ac-custom ol {
-  margin: 0;
-  padding: 10px 0;
-  margin-left: 20px;
-  position: relative;
-}
-.ac-custom label {
-  display: inline-block;
-  position: relative;
-  font-size: 1.5em;
-  padding: 0 0 0 40px;
-  vertical-align: top;
-  color: rgba(0, 0, 0, 0.4);
-  cursor: pointer;
-  -webkit-transition: color 0.3s;
-  transition: color 0.3s;
-}
-.ac-custom input[type="checkbox"], .ac-custom input[type="radio"] {
-  width: 25px;
-  height: 25px;
-  top: 0;
-  left: 0;
-  margin-top: 0px;
-  position: absolute;
-  cursor: pointer;
-}
-.ac-custom label::before {
-  width: 25px;
-  height: 25px;
-  top: 0;
-  left: 0;
-  margin-top: 0px;
-  position: absolute;
-  cursor: pointer;
-}
-.ac-custom input[type="checkbox"], .ac-custom input[type="radio"] {
-  opacity: 0;
-  -webkit-appearance: none;
-  display: inline-block;
-  vertical-align: middle;
-  z-index: 100;
-}
-.ac-custom label::before {
-  content: '';
-  border: 4px solid rgba(0, 0, 0, 0.4);
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
-}
-
-.ac-radio label::before {
-  /*border-radius: 50%;*/
-}
-
-.ac-custom input[type="checkbox"]:checked + label, .ac-custom input[type="radio"]:checked + label {
-  color: black;
-}
-.ac-custom input[type="checkbox"]:checked + label::before, .ac-custom input[type="radio"]:checked + label::before {
-  opacity: 1.0;
-}
-.ac-custom svg {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  top: 50%;
-  margin-top: -20px;
-  left: 0px;
-  pointer-events: none;
-}
-.ac-custom svg path {
-  stroke: #ff3300;
-  stroke-width: 13px;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  fill: none;
-}
-
-/* General SVG and path styles */
-/* Specific input, SVG and path styles */
-/* Circle */
-.ac-circle input[type="checkbox"], .ac-circle input[type="radio"] {
-  width: 30px;
-  height: 30px;
-  margin-top: -15px;
-  left: 10px;
-  position: absolute;
-}
-.ac-circle label::before {
-  width: 30px;
-  height: 30px;
-  margin-top: -15px;
-  left: 10px;
-  position: absolute;
-  background-color: #fff;
-  border: none;
-}
-.ac-circle svg {
-  width: 70px;
-  height: 70px;
-  margin-top: -35px;
-  left: -10px;
-}
-.ac-circle svg path {
-  stroke-width: 5px;
-}
-
-/* Box Fill */
-.ac-boxfill svg path, .ac-swirl svg path {
-  stroke-width: 8px;
-}
-
-/* Swirl */
-/* List */
-.ac-list ol {
-  list-style: decimal;
-  list-style-position: inside;
-}
-.ac-list ol li {
-  font-size: 2em;
-  padding: 1em 1em 0 2em;
-  text-indent: -40px;
-}
-.ac-list ol li label {
-  font-size: 1em;
-  text-indent: 0;
-  padding-left: 30px;
-}
-.ac-list label::before {
-  display: none;
-}
-.ac-list svg {
-  width: 100%;
-  height: 80px;
-  left: 0;
-  top: 1.2em;
-  margin-top: 0px;
-}
-.ac-list svg path {
-  stroke-width: 4px;
-}
-
-/* Media Queries */
-@media screen and (max-width: 50em) {
-  section {
-    font-size: 80%;
-  }
-}
-html {
-  height: 100%;
-}
-
-body {
-  font-family: "Cinzel Decorative", cursive, "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "メイリオ", Meiryo, serif;
-  background-color: black;
-  margin-right: auto;
-  margin-left: auto;
-  height: 100%;
-  background-image: url("../img/mo15.png");
-}
-body > #contents {
-  height: auto;
-  height: 100%;
-  padding-left: 0px;
-  padding-right: 0px;
-  width: 800px;
-  /**/
-  margin-right: auto;
-  margin-left: auto;
-}
-body #main {
-  padding-top: 40px;
-  padding-bottom: 30px;
-  width: 800px;
-  height: 600px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 0px;
-  background-image: url("../img/old-pape_L.png");
-  background-repeat: no-repeat;
-  /*background-color:rgba(255,255,255,0.7);*/
-  /*background-color:red;*/
-}
-
-#questions {
-  padding-top: 0px;
-  width: 700px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-right: auto;
-  margin-left: auto;
-  /*display: none;*/
-  /*font-family: $mainFont;*/
-}
-#questions #submit {
-  margin-top: 20px;
-}
-
-#footer {
-  color: white;
-  text-align: center;
-  /*font-family: 'Cinzel Decorative', cursive;*/
-}
-
-h1 {
-  /*font-family: 'Cinzel Decorative', cursive;*/
-  border-bottom: solid 1px rgba(0, 0, 0, 0.5);
-  margin-bottom: 0px;
-}
-
-form {
-  margin-bottom: 0px;
-  padding: 5px;
-}
-
-.intro {
-  margin: 0;
-}
-.intro .round {
-  -moz-border-radius: 15.4px;
-  -webkit-border-radius: 15.4px;
-  -khtml-border-radius: 15.4px;
-  border-radius: 15.4px;
-  font-size: 12.6px;
-  padding: 1.4px 7px;
-  background-color: rgba(0, 0, 0, 0.5);
-  /*border: solid 1px $gray;*/
-  color: #fff;
-  font-weight: bold;
-}
-
-input[type="text"], input[type="number"] {
-  border: 0;
-  padding: 10px;
-  font-size: 1.3em;
-  color: #666;
-  border: solid 1px #ccc;
-  margin: 0px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  -moz-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
-  box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
-}
-input[type="text"] {
-  width: 10em;
-}
-input[type="number"] {
-  width: 6em;
-}
-input[type="text"]:focus, input[type="number"]:focus {
-  border: solid 1px #EEA34A;
-}
-
-.button {
-  /*バルーン*/
-  position: relative;
-  display: inline-block;
-  padding: 0 15px;
-  width: auto;
-  min-width: 115px;
-  /*height: 50px;*/
-  color: #564539;
-  /*line-height: 50px;*/
-  text-align: center;
-  border-radius: 50px;
-  z-index: 0;
-  text-decoration: none;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -o-transition: 0.5s;
-  -ms-transition: 0.5s;
-  transition: 0.5s;
-  background: rgba(255, 255, 255, 0.6);
-  /*padding: $smallSkip;*/
-}
-.button:before, .button:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  margin-right: 0;
-  display: block;
-  border-radius: 50%;
-}
-.button:before {
-  top: -17px;
-  left: 15px;
-  width: 15px;
-  height: 15px;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -o-transition: 0.5s;
-  -ms-transition: 0.5s;
-  transition: 0.5s;
-  background: rgba(255, 255, 255, 0.6);
-}
-.button:after {
-  top: -25px;
-  left: 25px;
-  width: 8px;
-  height: 8px;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -o-transition: 0.5s;
-  -ms-transition: 0.5s;
-  transition: 0.5s;
-  background: rgba(255, 255, 255, 0.6);
-}
-.button:hover {
-  background: #564539;
-  color: #fff;
-}
-.button:hover:before, .button:hover:after {
-  background: #564539;
-  color: #fff;
-}
+Backtrace:
+C:/test/D2015/sass/_mycss.scss:8
+C:\test\D2015\sass\main.scss:2
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1323:in `rescue in block in find_encoding_error'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1320:in `block in find_encoding_error'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1319:in `each'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1319:in `each_with_index'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/util.rb:1319:in `find_encoding_error'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/util.rb:896:in `check_sass_encoding'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:423:in `check_encoding!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:379:in `_to_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:299:in `to_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:313:in `block in visit_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:88:in `block in with_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:88:in `with_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:312:in `visit_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:18:in `load'
+C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid Windows-31J character \"\xE6\"\A         on line 8 of C:/test/D2015/sass/_mycss.scss\A         from line 2 of C:\test\D2015\sass\main.scss\A \A 3: $smallSkip:10px;\A 4: $gray:rgba(0, 0, 0, 0.5);\A 5: $alphaWhite:rgba(255,255,255,0.6);\A 6: $clearColor:rgba(0,0,0,0);\A 7: $koge:#564539;\A 8: $mFont:'Cinzel Decorative', cursive,'游明朝', YuMincho, 'ヒラギノ明朝 ProN W3', 'Hiragino Mincho ProN', 'メイリオ', Meiryo, serif;\A 9: html {\A 10:   height: 100%;\A 11: }\A 12: \A 13: body {"; }
