@@ -14,9 +14,12 @@
 #qList {
   > li {
     padding-top: 0px;
+    list-style-type: upper-roman;
+    font-weight: bold;
     /*position:relative;*/
   }
   ul {
+      font-weight: normal;
     /*top:-10px;*/
     /*position:absolute;*/
   }
