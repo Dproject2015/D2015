@@ -29,6 +29,11 @@ table{
 		background-color: #eee;
 		border: 1px solid #b9b9b9;
 	}
+	/*tr{
+		&:nth-child(even){
+			background: black;
+		}
+	}*/
 	td{
 		padding: 6px;
 		background-color: #fff;

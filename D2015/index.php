@@ -53,7 +53,7 @@
 							<li><input type = "radio" name = "gender" value = "女" id = "female"><label for="female">女</label></li>
 						</ul>
 					</li>
-					<li>配属年：<input type = "number" id = "num" name = "year" placeholder = "<?php echo date(Y);?>" min = "2004" max = "<?php echo date(Y);?>">年</li>
+					<li>配属年：<input type = "number" id = "num" name = "year" min = "2004" max = "<?php echo date(Y);?>">年</li>
 				</ol>
 				
 				<!--<input type = "submit" value = "Go next">-->

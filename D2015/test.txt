@@ -1,0 +1,22 @@
+test
+testtesttest
+
+
+<<<<<<< HEAD
+qwwertyu
+=======
+test2
+
+test2
+test2
+test2
+test2
+>>>>>>> remotes/origin/master
+
+<<<<<<< HEAD
+kokokokokokokoko
+=======
+
+
+@owqireyt@oqwiuytq@98wreytqpiwurytqpiruytpqiw
+>>>>>>> 1101115c4c77057b770e0d92cca9bbc41a10de7f
