@@ -34,7 +34,7 @@ $(function(){
 			CreateAudio(TsukaSoundedVoice);
 			//再生
 			var count = 0;
-			sound(count);
+			setTimeout("sound('"+count+"')",1000);
 			count = 1;
 		}else if(voiceflag=="Terada"){
 			var TeraVoices = TeraSound.length-1;
@@ -42,7 +42,7 @@ $(function(){
 			var TeraSoundVoices = "terada/"+TeraSound[TeraNum];
 			CreateAudio(TeraSoundVoices);
 			var count = 0;
-			sound(count);
+			setTimeout("sound('"+count+"')",1000);
 			count = 1;
 		}
 	});
