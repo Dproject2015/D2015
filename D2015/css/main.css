@@ -1,6 +1,8 @@
+@charset "UTF-8";
 .q {
   height: 40px;
 }
+
 .q li {
   margin-left: 80px;
   /*list-style-type:none;*/
@@ -16,10 +18,12 @@
 #qList {
   padding: 0;
 }
+
 #qList > li {
   padding-top: 0px;
   /*position:relative;*/
 }
+
 #qList ul {
   /*top:-10px;*/
   /*position:absolute;*/
@@ -30,6 +34,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 *:after, *::before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -41,24 +46,28 @@
   max-width: 900px;
   margin: 0;
 }
+
 .ac-custom h2 {
   font-size: 3em;
   font-weight: 300;
   padding: 0 0 0.5em;
   margin: 0 0 30px;
 }
+
 .ac-custom ul {
   list-style: none;
   padding: 0;
   margin: 0 auto;
   max-width: 800px;
 }
+
 .ac-custom li, .ac-custom ol {
   margin: 0;
   padding: 10px 0;
   margin-left: 20px;
   position: relative;
 }
+
 .ac-custom label {
   display: inline-block;
   position: relative;
@@ -70,6 +79,7 @@
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
 }
+
 .ac-custom input[type="checkbox"], .ac-custom input[type="radio"] {
   width: 25px;
   height: 25px;
@@ -79,6 +89,7 @@
   position: absolute;
   cursor: pointer;
 }
+
 .ac-custom label::before {
   width: 25px;
   height: 25px;
@@ -88,6 +99,7 @@
   position: absolute;
   cursor: pointer;
 }
+
 .ac-custom input[type="checkbox"], .ac-custom input[type="radio"] {
   opacity: 0;
   -webkit-appearance: none;
@@ -95,6 +107,7 @@
   vertical-align: middle;
   z-index: 100;
 }
+
 .ac-custom label::before {
   content: '';
   border: 4px solid rgba(0, 0, 0, 0.4);
@@ -109,9 +122,11 @@
 .ac-custom input[type="checkbox"]:checked + label, .ac-custom input[type="radio"]:checked + label {
   color: black;
 }
+
 .ac-custom input[type="checkbox"]:checked + label::before, .ac-custom input[type="radio"]:checked + label::before {
   opacity: 1.0;
 }
+
 .ac-custom svg {
   position: absolute;
   width: 30px;
@@ -121,6 +136,7 @@
   left: 0px;
   pointer-events: none;
 }
+
 .ac-custom svg path {
   stroke: #ff3300;
   stroke-width: 13px;
@@ -139,6 +155,7 @@
   left: 10px;
   position: absolute;
 }
+
 .ac-circle label::before {
   width: 30px;
   height: 30px;
@@ -148,12 +165,14 @@
   background-color: #fff;
   border: none;
 }
+
 .ac-circle svg {
   width: 70px;
   height: 70px;
   margin-top: -35px;
   left: -10px;
 }
+
 .ac-circle svg path {
   stroke-width: 5px;
 }
@@ -169,19 +188,23 @@
   list-style: decimal;
   list-style-position: inside;
 }
+
 .ac-list ol li {
   font-size: 2em;
   padding: 1em 1em 0 2em;
   text-indent: -40px;
 }
+
 .ac-list ol li label {
   font-size: 1em;
   text-indent: 0;
   padding-left: 30px;
 }
+
 .ac-list label::before {
   display: none;
 }
+
 .ac-list svg {
   width: 100%;
   height: 80px;
@@ -189,6 +212,7 @@
   top: 1.2em;
   margin-top: 0px;
 }
+
 .ac-list svg path {
   stroke-width: 4px;
 }
@@ -199,6 +223,7 @@
     font-size: 80%;
   }
 }
+
 html {
   height: 100%;
 }
@@ -211,6 +236,7 @@ body {
   height: 100%;
   background-image: url("../img/mo15.png");
 }
+
 body > #contents {
   height: auto;
   height: 100%;
@@ -221,6 +247,7 @@ body > #contents {
   margin-right: auto;
   margin-left: auto;
 }
+
 body #main {
   padding-top: 40px;
   padding-bottom: 30px;
@@ -247,6 +274,7 @@ body #main {
   /*display: none;*/
   /*font-family: $mainFont;*/
 }
+
 #questions #submit {
   margin-top: 20px;
 }
@@ -271,6 +299,7 @@ form {
 .intro {
   margin: 0;
 }
+
 .intro .round {
   -moz-border-radius: 15.4px;
   -webkit-border-radius: 15.4px;
@@ -298,12 +327,15 @@ input[type="text"], input[type="number"] {
   -webkit-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
   box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
 }
+
 input[type="text"] {
   width: 10em;
 }
+
 input[type="number"] {
   width: 6em;
 }
+
 input[type="text"]:focus, input[type="number"]:focus {
   border: solid 1px #EEA34A;
 }
@@ -330,6 +362,7 @@ input[type="text"]:focus, input[type="number"]:focus {
   background: rgba(255, 255, 255, 0.6);
   /*padding: $smallSkip;*/
 }
+
 .button:before, .button:after {
   content: "";
   position: absolute;
@@ -338,6 +371,7 @@ input[type="text"]:focus, input[type="number"]:focus {
   display: block;
   border-radius: 50%;
 }
+
 .button:before {
   top: -17px;
   left: 15px;
@@ -350,6 +384,7 @@ input[type="text"]:focus, input[type="number"]:focus {
   transition: 0.5s;
   background: rgba(255, 255, 255, 0.6);
 }
+
 .button:after {
   top: -25px;
   left: 25px;
@@ -362,10 +397,12 @@ input[type="text"]:focus, input[type="number"]:focus {
   transition: 0.5s;
   background: rgba(255, 255, 255, 0.6);
 }
+
 .button:hover {
   background: #564539;
   color: #fff;
 }
+
 .button:hover:before, .button:hover:after {
   background: #564539;
   color: #fff;
