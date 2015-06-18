@@ -2,8 +2,8 @@
 	require_once('../accessInfo.php');
 	require_once('CalcFunction.php');
 		//$mid = $_POST['mid'];
-		/*
-		$Answers = array(
+		
+		/*$Answers = array(
 			"q1" => $_POST['q1'],
 			"q2" => $_POST['q2'],
 			"q3" => $_POST['q3'],
@@ -20,11 +20,28 @@
 			"q14" => $_POST['q14'],
 			"q15" => $_POST['q15'],
 			"q16" => $_POST['q16'],
+		);*/
+		$Answers = array(
+			intval($_POST['q1']),
+			intval($_POST['q2']),
+			intval($_POST['q3']),
+			intval($_POST['q4']),
+			intval($_POST['q5']),
+			intval($_POST['q6']),
+			intval($_POST['q7']),
+			intval($_POST['q8']),
+			intval($_POST['q9']),
+			intval($_POST['q10']),
+			intval($_POST['q11']),
+			intval($_POST['q12']),
+			intval($_POST['q13']),
+			intval($_POST['q14']),
+			intval($_POST['q15']),
+			intval($_POST['q16']),
 		);
-		*/
 		//ダミーデータ
 		$mid = 1;
-		$Answers = array(5,5,5,4,5,4,3,2,1,2,3,4,5,4,3,2);
+		//$Answers = array(5,5,5,4,5,4,3,2,1,2,3,4,5,4,3,2);
 		//		
 			
 		$Name = array("伊藤悠真", "沈瑞未", "土田修平", "渡邊拓貴", "菅家浩之", "出田怜", "双見京介");
@@ -61,7 +78,7 @@
 			}
 			//距離計算
 			$Dis = CalcDistance($Answers, $D_Data);
-			var_dump($Dis[6]);
+			//var_dump($Dis[6]);
 			//チーム決定
 			$Min = $Dis[0];
 			$TeamNum = 0;
@@ -71,7 +88,7 @@
 					$TeamNum = $i;
 				}
 			}
-			$TeamNum = 1;
+			//$TeamNum = 1;
 			//$r = $mysql_fetch_array($query2,'MYSQL_ASSOC');
 			//var_dump($r);
 			//
