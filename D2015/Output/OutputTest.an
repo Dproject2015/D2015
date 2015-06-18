@@ -3,26 +3,16 @@
 
 	"HTMLFileName":"OutputTest.html",
 	"pref__general__AutoKeyframeProperties":"true",
-	"ModelData":"{\
-\"stage\": {\
-   \"timelines\": {\
-      \"Default Timeline\": {\
-      }\
-   }},\
-\"プリローダー\": {\
-   \"timelines\": {\
-\
-   }},\
-\"下位レベル\": {\
-   \"timelines\": {\
-\
-   }}\
-}",
+	"mediagroup_media/tokyokansei_arranged.mp3":"tokyokansei_arranged",
 	"expanded:images/old-pape_L.png":"nil",
+	"stage-Default Timeline_mark_ms":"-1",
 	"expanded:images/mo15.png":"nil",
 	"pref__general__FilterNonAnimatedElements":"false",
-	"viewStartMs":"16351.237710983",
-	"pref__general__AutoKeyframePropertiesArmed":"true",
+	"mediagroup_media/soccer_kansei.mp3":"soccer_kansei",
+	"mediagroup_media/mario.mp3":"mario",
+	"viewStartMs":"-51.865489959717",
+	"pref__general__AutoKeyframePropertiesArmed":"false",
+	"mediagroup_media/doraemon.mp3":"doraemon",
 	"symbol_stage":{
 		"dummyStageParentWidth":"800px",
 		"dummyStageParentHeight":"594px",
@@ -68,22 +58,23 @@
 			"timelineColor3":"0x2a605c",
 			"animationEnabled":"true",
 			"timelineColor":"0x00a096"},
-		"element_${tokyokansei_arranged}":{
-			"timelineColor2":"0xcbbd71",
-			"timelineColor3":"0x7b7652",
+		"element_${your_team_is}":{
+			"timelineColor2":"0x326a96",
 			"animationEnabled":"true",
-			"timelineColor":"0xeedf79"},
+			"timelineColor3":"0x385063",
+			"timelineColor":"0x2f73ad"},
 		"element_${Text2}":{
 			"timelineColor2":"0x107faa",
 			"timelineColor3":"0x295a6d",
 			"animationEnabled":"false",
 			"timelineColor":"0x008dc8"},
 		"defaultStageParentHeight":"594px",
-		"element_${your_team_is}":{
-			"timelineColor2":"0x326a96",
+		"element_${lifeteam}":{
+			"timelineColor2":"0xd35d6e",
+			"timelineColor3":"0x7e4b52",
+			"timelineColor":"0xfb657a",
 			"animationEnabled":"true",
-			"timelineColor3":"0x385063",
-			"timelineColor":"0x2f73ad"},
+			"usingMotionPaths":"true"},
 		"element_${Stage}":{
 			"timelineColor2":"0xcbbd71",
 			"timelineColor3":"0x7b7652",
@@ -95,26 +86,40 @@
 			"timelineColor3":"0x7b7652",
 			"animationEnabled":"true",
 			"timelineColor":"0xeedf79"},
-		"element_${lifeteam}":{
-			"timelineColor2":"0xd35d6e",
-			"timelineColor3":"0x7e4b52",
-			"timelineColor":"0xfb657a",
+		"element_${tokyokansei_arranged}":{
+			"timelineColor2":"0xcbbd71",
+			"timelineColor3":"0x7b7652",
 			"animationEnabled":"true",
-			"usingMotionPaths":"true"},
+			"timelineColor":"0xeedf79"},
 		"element_${kameteam}":{
 			"timelineColor2":"0x5a558a",
 			"timelineColor3":"0x4a485e",
 			"timelineColor":"0x63599f",
 			"animationEnabled":"true",
 			"usingMotionPaths":"true"}},
-	"TransitionIdCounter":"95",
+	"TransitionIdCounter":"98",
 	"CompZoomFactor":"100",
-	"viewStartY":"25",
+	"viewStartY":"215",
 	"pixelsPerMs":"0.096403216697852",
-	"mediagroup_media/tokyokansei_arranged.mp3":"tokyokansei_arranged",
+	"mediagroup_media/booo.mp3":"booo",
+	"pref__general__GenerateSmoothTransitions":"true",
 	"usedBOM":"false",
 	"nextElementColorIndex":"2",
 	"stage-Default Timeline_playhead_ms":"19001",
+	"mediagroup_media/wa_o.mp3":"wa_o",
 	"StageZoomFactor":"80",
-	"stage-Default Timeline_mark_ms":"-1",
-	"pref__general__GenerateSmoothTransitions":"true"}
+	"ModelData":"{\
+\"stage\": {\
+   \"timelines\": {\
+      \"Default Timeline\": {\
+      }\
+   }},\
+\"プリローダー\": {\
+   \"timelines\": {\
+\
+   }},\
+\"下位レベル\": {\
+   \"timelines\": {\
+\
+   }}\
+}"}
