@@ -21,6 +21,7 @@
 			"q15" => $_POST['q15'],
 			"q16" => $_POST['q16'],
 		);*/
+		//postされたデータを数値に変換
 		$Answers = array(
 			intval($_POST['q1']),
 			intval($_POST['q2']),
