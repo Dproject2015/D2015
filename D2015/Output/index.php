@@ -67,6 +67,20 @@
 		if($conn){
 			//データベース選択
 			mysql_select_db($db_name,$conn);
+			//回答をDBにinsert===========================================
+			$insert = 'INSERT INTO scores (point,mid,eid) VALUES ';
+			//$tmp = $Answers;
+			//var_dump($answers);
+			for($i=0;$i<count($Answers);$i++){
+				$num = $i+1;
+				$insert = $insert.'('.$Answers[$i].','.$mid.','.$num.')';
+				if($i<15){
+					$insert = $insert.',';//最後の要素でないとき
+				}
+			}
+			//echo $insert;
+			$q = mysql_query($insert,$conn);
+			//=======================================================
 			//データベースから値を取得
 			//教師データの取得
 			//SQL実行（midで検索して、pointを取得）
