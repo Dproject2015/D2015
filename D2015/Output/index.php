@@ -1,5 +1,5 @@
 <?php
-	require_once('accessInfo.php');
+	require_once('../accessInfo.php');
 	require_once('CalcFunction.php');
 		//$mid = $_POST['mid'];
 		/*
@@ -146,14 +146,12 @@
 
 <body>
 <div id = "contents">
-	<!--<div id = "main">-->
-		<div id="Stage" class="EDGE-116503079">
-		
+	<div id = "main">
+		<div id="Stage" class="EDGE-116503079">	
+		</div>
 	</div>
-
-	<!--</div>-->
 	<div id = "footer">
-	&copy; TSUKAMOTO TERADA LABORATORY
+		&copy; TSUKAMOTO TERADA LABORATORY
 	</div>
 </div>
 	
