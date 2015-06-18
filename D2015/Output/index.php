@@ -2,6 +2,7 @@
 	require_once('../accessInfo.php');
 	require_once('CalcFunction.php');
 		//$mid = $_POST['mid'];
+		//コメント追加いずた
 		
 		/*$Answers = array(
 			"q1" => $_POST['q1'],
