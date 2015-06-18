@@ -1,5 +1,5 @@
 <?php
-	require_once('accessInfo.php');
+	require_once('../accessInfo.php');
 	require_once('CalcFunction.php');
 		//$mid = $_POST['mid'];
 		/*
@@ -78,7 +78,8 @@
 			//$mysql_free_result($query2);*/
 		}
 		//echo $mid[0];
-		//var_dump($mid);
+		//var_dump($mid);
+
 	?>
 
 <!DOCTYPE html>
@@ -91,15 +92,15 @@
 		<!--<link rel = "stylesheet" type ="text/css" href = "css/mycss.css" media = "all">
 		<link rel = "stylesheet" href = "css/textform.css">
 		<link rel = "stylesheet" href = "css/component.css">-->
-		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="../css/main.css">
 		<!--フォント-->
 		<link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900' rel='stylesheet' type='text/css'>
 	
 		<!--スクリプト-->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<script type= "text/javascript" src = "lib/footerFixed.js"></script>
-		<script src="lib/jquery.fademover.js"></script>
-		<script src = "lib/modernizr.custom.js"></script>
+		<script type= "text/javascript" src = "../lib/footerFixed.js"></script>
+		<script src="../lib/jquery.fademover.js"></script>
+		<script src = "../lib/modernizr.custom.js"></script>
 	
 		<!--Adobe Edge Runtime-->
 		<!--チーム決定-->
