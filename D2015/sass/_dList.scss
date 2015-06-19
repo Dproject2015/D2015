@@ -1,0 +1,35 @@
+$dtLeft:70px;
+#dList{
+	dt{
+		padding: {
+			top:$smallSkip;
+			bottom: $smallSkip;
+			left: $smallSkip;
+		}
+		//margin: {
+		//	bottom: $smallSkip;
+		//}
+		width: $dtLeft;
+		float: left;
+		clear: both;
+	}
+	dd{
+		//padding: {
+		//	top: $smallSkip;
+		//	left: $smallSkip;
+		//	right: $smallSkip;
+		//	bottom: $smallSkip;
+		//}
+		margin:{
+			left:$dtLeft+$smallSkip;
+			bottom: $smallSkip;
+		}
+		width: 400px;
+		li{
+			margin: {
+				left:0;
+				right: 20px;
+			}
+		}
+	}
+}

@@ -46,16 +46,17 @@
 			<hr class="grad">
 			<p>まずは君が誰なのか教えてもらえるかな？</p>
 			<form action = "question01.php" method="post" name = "basicInfo" class = "ac-custom ac-radio ac-checkmark">
-				<ol id = "qList">
-					<li>名前：<input type = "text" name = "name"></li>
-					<li>性別：
+				<dl id = "dList">
+					<dt>名前</dt><dd><input type = "text" name = "name"></dd>
+					<dt>性別</dt>
+					<dd>
 						<ul class = "q vertical">
 							<li><input type = "radio" name = "gender" value = "男" id = "male"><label for="male">男</label></li>
 							<li><input type = "radio" name = "gender" value = "女" id = "female"><label for="female">女</label></li>
 						</ul>
-					</li>
-					<li>配属年：<input type = "number" id = "num" name = "year" min = "2004" max = "<?php echo date(Y);?>">年</li>
-				</ol>
+					</dd>
+					<dt>配属年</dt><dd><input type = "number" id = "num" name = "year" min = "2004" max = "<?php echo date(Y);?>"> 年</dd>
+				</dl>
 				
 				<!--<input type = "submit" value = "Go next">-->
 			</form>

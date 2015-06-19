@@ -101,10 +101,6 @@ form {
   display: inline-block;
 }
 
-.vertical {
-  display: inline-block;
-}
-
 #qList {
   padding: 0;
 }
@@ -378,4 +374,22 @@ input[type="text"]:focus, input[type="number"]:focus {
 .button:hover:before, .button:hover:after {
   background: #564539;
   color: #fff;
+}
+
+#dList dt {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  width: 70px;
+  float: left;
+  clear: both;
+}
+#dList dd {
+  margin-left: 80px;
+  margin-bottom: 10px;
+  width: 400px;
+}
+#dList dd li {
+  margin-left: 0;
+  margin-right: 20px;
 }
