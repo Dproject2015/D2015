@@ -4,46 +4,45 @@ html {
 
 body {
   font-family: "Cinzel Decorative", cursive, "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "メイリオ", Meiryo, serif;
+  height: 100%;
   background-color: black;
+  background-image: url("../img/mo15.png");
+  background-repeat: repeat;
   margin-right: auto;
   margin-left: auto;
-  height: 100%;
-  background-image: url("../img/mo15.png");
 }
 body > #contents {
-  height: auto;
+  /*height:auto;*/
   height: 100%;
-  padding-left: 0px;
-  padding-right: 0px;
   width: 800px;
   /**/
   margin-right: auto;
   margin-left: auto;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 body #main {
   padding-top: 40px;
   padding-bottom: 30px;
   width: 800px;
   height: 600px;
-  padding-left: 10px;
-  padding-right: 10px;
+  background-image: url("../img/old-page_L.png");
+  background-repeat: no-repeat;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 0px;
-  background-image: url("../img/old-pape_L.png");
-  background-repeat: no-repeat;
+  padding-left: 10px;
+  padding-right: 10px;
   position: relative;
-  /*background-color:rgba(255,255,255,0.7);*/
-  /*background-color:red;*/
 }
 
 #questions {
-  padding-top: 0px;
   width: 700px;
-  padding-left: 10px;
-  padding-right: 10px;
   margin-right: auto;
   margin-left: auto;
+  padding-top: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
   /*display: none;*/
   /*font-family: $mainFont;*/
 }
@@ -76,12 +75,11 @@ form {
   -webkit-border-radius: 15.4px;
   -khtml-border-radius: 15.4px;
   border-radius: 15.4px;
-  font-size: 12.6px;
   padding: 1.4px 7px;
   background-color: rgba(0, 0, 0, 0.5);
-  /*border: solid 1px $gray;*/
-  color: #fff;
+  font-size: 12.6px;
   font-weight: bold;
+  color: #fff;
 }
 
 .q {
@@ -89,10 +87,8 @@ form {
 }
 .q li {
   margin-left: 80px;
-  /*list-style-type:none;*/
-  display: inline-block;
   padding-top: 0;
-  /*position: relative;*/
+  display: inline-block;
 }
 
 .vertical {
@@ -104,14 +100,11 @@ form {
 }
 #qList > li {
   padding-top: 0px;
-  list-style-type: upper-roman;
   font-weight: bold;
-  /*position:relative;*/
+  list-style-type: upper-roman;
 }
 #qList ul {
   font-weight: normal;
-  /*top:-10px;*/
-  /*position:absolute;*/
 }
 
 * {
