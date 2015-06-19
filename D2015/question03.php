@@ -16,7 +16,7 @@
 <html lang = "ja">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>S2 Sorting hat</title>
+	<title>-Answer Questions-S2 Sorting hat</title>
 	<!--スタイルシート-->
 	<!--スタイルシート-->
 	<!--<link rel = "stylesheet" href = "css/animsition.min.css">-->
@@ -27,7 +27,7 @@
 	<!--ファビコン-->
 	<link rel="shortcut icon" href="http://cse.eedept.kobe-u.ac.jp/wp-content/uploads/2012/05/eigoUri1.png" type="image/x-icon">
 	<!--フォント-->
-	<link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700' rel='stylesheet' type='text/css'>
 	
 	<!--スクリプト-->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -49,6 +49,7 @@
 	<div id = "main">
 		<div id = "questions">
 			<h1>Answer Questions</h1>
+			<hr class="grad">
 			<p class = "intro">以下の質問に5段階で回答するのだ．<br>
 			（<span class="round">1</span> : あてはまらない---<span class="round">3</span> : どちらでもない---<span class="round">5</span> : あてはまる）</p>
 			<!--<p>Answer questions</p>-->

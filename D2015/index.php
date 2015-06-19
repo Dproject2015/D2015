@@ -12,7 +12,7 @@
 	<!--ファビコン-->
 	<link rel="shortcut icon" href="http://cse.eedept.kobe-u.ac.jp/wp-content/uploads/2012/05/eigoUri1.png" type="image/x-icon">
 	<!--フォント-->
-	<link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700' rel='stylesheet' type='text/css'>
 	
 	<!--スクリプト-->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -43,6 +43,7 @@
 	<div id = "main">
 		<div id = "questions">
 			<h1>S2 Sorting Hat</h1>
+			<hr class="grad">
 			<p>まずは君が誰なのか教えてもらえるかな？</p>
 			<form action = "question01.php" method="post" name = "basicInfo" class = "ac-custom ac-radio ac-checkmark">
 				<ol id = "qList">

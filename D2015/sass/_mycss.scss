@@ -5,7 +5,8 @@ $gray:rgba(0, 0, 0, 0.5);
 $alphaWhite:rgba(255,255,255,0.6);
 $clearColor:rgba(0,0,0,0);
 $koge:#564539;
-$mFont:'Cinzel Decorative', cursive,'游明朝', YuMincho, 'ヒラギノ明朝 ProN W3', 'Hiragino Mincho ProN', 'メイリオ', Meiryo, serif;
+$mFont:'游明朝', YuMincho, 'ヒラギノ明朝 ProN W3', 'Hiragino Mincho ProN', 'メイリオ', Meiryo, serif;
+$titleFont:'Cinzel Decorative', cursive,'游明朝', YuMincho, 'ヒラギノ明朝 ProN W3', 'Hiragino Mincho ProN', 'メイリオ', Meiryo, serif;
 
 @mixin base_round($radius:15.4px,$vertical:1.4px,$horizontal:7px){
   	-moz-border-radius:$radius;
@@ -18,7 +19,11 @@ html {
   height: 100%;
 }
 body {
-  font-family: $mFont;
+	font:{
+		family:$mFont;
+		weight:normal;
+	}
+  //font-family: $mFont;
   height: 100%;
   background:{
   	color:black;
@@ -92,15 +97,26 @@ body {
 }
 
 h1 {
-  /*font-family: 'Cinzel Decorative', cursive;*/
-  border:{
-  	bottom:solid 1px $gray;
-  }
+	font: {
+		family:$titleFont;
+	}
+  //font-family: 'Cinzel Decorative', cursive;
+  //border:{
+  //	bottom:solid 1px $gray;
+  //}
   margin: {
   	bottom: 0px;
   }
 }
-
+hr.grad{
+	margin:0;
+	border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
 form {
 	margin: {
 		bottom: 0px;
