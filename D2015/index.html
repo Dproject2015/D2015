@@ -18,23 +18,19 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script type= "text/javascript" src = "lib/footerFixed.js"></script>
 	<script src="lib/jquery.fademover.js"></script>
-	<script src = "lib/modernizr.custom.js"></script>	
+	<script src = "lib/modernizr.custom.js"></script>
 	<!--フェードイン-->
 	<script src="lib/fade.js"></script>
 	<!--全て入力されたらリンクを表示-->
 	<script src="lib/checkform.js"></script>
-	<!--音声再生-->
-	<script>
-		var playCount = 0;
-		function sound(){
-			if(playCount > 0){
-				document.getElementById("sound-file").currentTime = 0;
-			}
-			//[ID:sound-file]の音声ファイルを再生[play()]する
-			$("#sound-file").get(0).play();
-			//初回再生が終わった判定用に[playcount]の値を0から1に変更
-			playCount = 1;
-	}
+	<!--inputの最大値を現在の年に変更-->
+	<script type="text/javascript">
+		window.onload = function(){
+			var n = document.getElementById('num');
+			var today = new Date();
+			var year = today.getFullYear();
+			n.max = String(year);
+		};
 	</script>
 </head>
 
@@ -55,7 +51,7 @@
 							<li><input type = "radio" name = "gender" value = "女" id = "female"><label for="female">女</label></li>
 						</ul>
 					</dd>
-					<dt>配属年</dt><dd><input type = "number" id = "num" name = "year" min = "2004" max = "<?php echo date(Y);?>"> 年</dd>
+					<dt>配属年</dt><dd><input type = "number" id = "num" name = "year" min = "2004"></script>" 年</dd>
 				</dl>
 				
 				<!--<input type = "submit" value = "Go next">-->
