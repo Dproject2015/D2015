@@ -1,3 +1,5 @@
+/*バルーン型のリンクのデザイン*/
+/*=================================================*/
 @mixin base_element($time:0.5s){
   -webkit-transition: $time;
      -moz-transition: $time;

@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/*基本デザイン*/
+/*=================================================*/
 html {
   height: 100%;
 }
@@ -41,6 +43,7 @@ body #main {
 }
 
 #questions, #start {
+  position: relative;
   width: 700px;
   margin-right: auto;
   margin-left: auto;
@@ -53,6 +56,30 @@ body #main {
 
 #questions #submit, #start #submit {
   margin-top: 20px;
+}
+
+#questions #normalLink, #start #normalLink {
+  position: absolute;
+  height: 50px;
+  width: 150px;
+  top: 430px;
+  display: table;
+  text-align: center;
+}
+
+#questions #normalLink a, #start #normalLink a {
+  display: table-cell;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+#questions #about, #start #about {
+  position: absolute;
+  width: 490px;
+  height: 380px;
+  padding: 10px;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 #start {
@@ -85,7 +112,7 @@ body #main {
   /*font-family: 'Cinzel Decorative', cursive;*/
 }
 
-h1 {
+h1, h2 {
   font-family: "Cinzel Decorative", cursive, "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "メイリオ", Meiryo, serif;
   margin-bottom: 0px;
 }
@@ -94,10 +121,10 @@ hr.grad {
   margin: 0;
   border: 0;
   height: 1px;
-  background-image: -webkit-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent);
-  background-image: -moz-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent);
-  background-image: -ms-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent);
-  background-image: -o-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent);
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5), transparent);
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5), transparent);
+  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5), transparent);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5), transparent);
 }
 
 form {
@@ -121,6 +148,8 @@ form {
   color: #fff;
 }
 
+/*チェックボックス、ラジオボタンのデザイン*/
+/*=================================================*/
 .q {
   height: 50px;
 }
@@ -340,6 +369,8 @@ form {
   }
 }
 
+/*テキストボックスのデザイン*/
+/*=================================================*/
 input[type="text"], input[type="number"] {
   border: 0;
   padding: 10px;
@@ -367,6 +398,8 @@ input[type="text"]:focus, input[type="number"]:focus {
   border: solid 1px #EEA34A;
 }
 
+/*バルーン型のリンクのデザイン*/
+/*=================================================*/
 .button {
   /*バルーン*/
   position: relative;
@@ -437,6 +470,8 @@ input[type="text"]:focus, input[type="number"]:focus {
   color: #fff;
 }
 
+/*定義リスト（dl）のデザイン*/
+/*=================================================*/
 #dList dt {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -457,16 +492,48 @@ input[type="text"]:focus, input[type="number"]:focus {
   margin-right: 20px;
 }
 
-#startButton .start_b {
-  background-color: rgba(255, 255, 255, 0.6);
-  color: #564539;
+/*リンクボタンのデザイン*/
+/*=================================================*/
+.normal_button {
   border-radius: 10px;
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-#startButton .start_b:hover {
+/*色分け*/
+.normal_color {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #564539;
+}
+
+.normal_color:hover {
   background-color: #564539;
   color: #fff;
+}
+
+.twitter_color {
+  background-color: #55acee;
+  color: #fff;
+}
+
+.twitter_color:hover {
+  filter: alpha(opacity=80);
+  -ms-filter: "alpha(opacity=80)";
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  opacity: 0.8;
+}
+
+.facebook_color {
+  background-color: #3b5998;
+  color: #fff;
+}
+
+.facebook_color:hover {
+  filter: alpha(opacity=80);
+  -ms-filter: "alpha(opacity=80)";
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  opacity: 0.8;
 }

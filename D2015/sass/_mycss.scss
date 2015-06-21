@@ -15,6 +15,8 @@ $titleFont:'Cinzel Decorative', cursive,'游明朝', YuMincho, 'ヒラギノ明�
     border-radius:$radius;
     padding:$vertical $horizontal;
 }
+/*基本デザイン*/
+/*=================================================*/
 html {
   height: 100%;
 }
@@ -71,6 +73,7 @@ body {
 }
 
 #questions,#start {
+  position: relative;
   width: $imgWidth - 100px;
   margin: {
   	right: auto;
@@ -86,6 +89,30 @@ body {
   	margin: {
   		top:2*$smallSkip;
   	}
+  }
+  #normalLink{
+    $h:50px;
+    position: absolute;
+    height: $h;
+    width: 150px;
+    top:$imgHeight - $h - 120px;
+    display: table;
+    text-align: center;
+    a{
+      display: table-cell;
+      vertical-align: middle;
+      text-decoration: none;
+    }
+  }
+  #about{
+    position:absolute;
+    width: 490px;
+    height: 380px;
+    padding: 10px;
+    overflow: {
+      x:hidden;
+      y:auto;
+    }
   }
   /*font-family: $mainFont;*/
 }
@@ -122,7 +149,7 @@ body {
   /*font-family: 'Cinzel Decorative', cursive;*/
 }
 
-h1 {
+h1,h2 {
 	font: {
 		family:$titleFont;
 	}
@@ -138,10 +165,10 @@ hr.grad{
 	margin:0;
 	border: 0;
     height: 1px;
-    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0.9), rgba(0,0,0,0.5), rgba(0,0,0,0));
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0.9), rgba(0,0,0,0.5), rgba(0,0,0,0));
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0.9), rgba(0,0,0,0.5), rgba(0,0,0,0));
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0.9), rgba(0,0,0,0.5), rgba(0,0,0,0));
 }
 form {
 	margin: {

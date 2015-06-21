@@ -1,5 +1,5 @@
 $(function(){
-		$("#submit").hide();
+		hideLink();
 		//radioを監視、値が変更されたら発火
 		$(":radio").change(function(event) {
 			/* Act on the event */
@@ -29,12 +29,17 @@ $(function(){
 	}
 	//submit要素を出現させる
 	function showLink(){
-			$("#submit").fadeIn(500);
+			$("#submit").animate({
+				opacity:'show'
+			},500);
 		}
 	//submit要素を隠す
 	function hideLink(){
-			$("#submit").fadeOut(500);
+			$("#submit").animate({
+				opacity:'hide'
+			},500);
 		}
+	//全てのフォームを監視し、空欄が1つでもあればfalseを返す関数
 	function checkForm(){
 		var flag=true;
 		//全てのテキストボックスをチェック
