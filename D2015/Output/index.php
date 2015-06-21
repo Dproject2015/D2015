@@ -132,7 +132,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900' rel='stylesheet' type='text/css'>
 	
 		<!--スクリプト-->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script type= "text/javascript" src = "../lib/footerFixed.js"></script>
 		<script src="../lib/jquery.fademover.js"></script>
 		<script src = "../lib/modernizr.custom.js"></script>

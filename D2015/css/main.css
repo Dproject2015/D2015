@@ -40,7 +40,7 @@ body #main {
   position: relative;
 }
 
-#questions {
+#questions, #start {
   width: 700px;
   margin-right: auto;
   margin-left: auto;
@@ -51,8 +51,32 @@ body #main {
   /*font-family: $mainFont;*/
 }
 
-#questions #submit {
+#questions #submit, #start #submit {
   margin-top: 20px;
+}
+
+#start {
+  height: 500px;
+  position: relative;
+}
+
+#start #startButton {
+  position: absolute;
+  width: 150px;
+  height: 1.5em;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: table;
+}
+
+#start #startButton span {
+  padding: 0;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 #footer {
@@ -431,4 +455,27 @@ input[type="text"]:focus, input[type="number"]:focus {
 #dList dd li {
   margin-left: 0;
   margin-right: 20px;
+}
+
+#startButton span {
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#startButton span:after {
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  width: 100%;
+  height: 1px;
+  transform: scaleX(0);
+  background-color: black;
+  bottom: 0;
+  left: 0;
+}
+
+#startButton span:hover:after {
+  transform: scaleX(1);
 }
