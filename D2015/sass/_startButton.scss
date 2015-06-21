@@ -10,16 +10,20 @@
 	opacity:$o/100;
 }
 @mixin snsbasic($color:#55acee,$path:"../img/sns/TwitterLogo_white.png"){
+	text-decoration: none;
 	border-radius: 10px;
 	position: relative;
 	background-color: $color;
-	margin-left: 50px;
+	//margin-left: 50px;
 	color: #fff;
 	&:hover{
 		//background-color: $twitter_black;
 		//color: $twitter_black;
 		@include opacity_ctrl;
 		//border: 1px solid $twitter_black;
+		&:before{
+			@include opacity_ctrl;
+		}
 	}
 	&:before{
 		position:absolute;
@@ -28,25 +32,20 @@
 		}
 		border-radius: 10px 0px 0px 10px;
 		content: '';
-		width: 50px;
-		height: 50px;
+		width: $snsH;
+		height: $snsH;
 		background-color: $color;
 		z-index: 1;
 		top: 0;
 		left: 0px;
 	}
 }
-/*リンクボタンのデザイン*/
-/*=================================================*/
-.normal_button{
-	//display: inline-block;
-	cursor: pointer;
-	@include base_button(0.3s);
-}/*その他ボタン*/
-/*=================================================*/
-#normalLink{
-	height: 50px;
-    width: 150px;
+$snsW:150px;
+$snsH:50px;
+$wider:200px;
+@mixin linkBase($w:$snsWidth){
+	height: $snsH;
+    width: $w;
     display: table;
     text-align: center;
     //padding:{
@@ -60,12 +59,52 @@
       //padding: 0 15px;
     }
 }
+/*リンクボタンのデザイン*/
+/*=================================================*/
+.normal_button{
+	//display: inline-block;
+	cursor: pointer;
+	@include base_button(0.3s);
+}/*その他ボタン*/
+/*=================================================*/
+.normalLink{
+	@include linkBase($snsW);
+}
+.widerLink{
+	@include linkBase($wider);
+}
 .snsLink{
 	//text-align: left;
 	padding: {
-		left: 50px;
+		left: $snsH
 	}
 }
+#snsLinks{
+	margin:0px auto;
+	height: $snsH;
+	list-style-type: none;
+	li{
+		//position: relative;
+		display: inline-block;
+		width:$snsW;
+		height: $snsH;
+		//padding: 5px 10px;
+		text-align: center;
+		//vertical-align: middle;
+		a{
+			//position: absolute;
+			display: block;
+			width: $snsW;
+			height: $snsH;
+			line-height: $snsH;
+			//top: 0px;
+			//right: 0px;
+			//bottom: 0px;
+			//left: 0px;
+		}
+	}
+}
+/*====================================================*/
 /*色分け*/
 .normal_color{
 	border-radius: 10px;
@@ -79,9 +118,13 @@
 .twitter_color{
 	//display: inline-block;
 	$twitter_blue:#55acee;
-	@include snsbasic($twitter_blue);
+	@include snsbasic($twitter_blue,"../img/sns/TwitterLogo_white.png");
 }
 .facebook_color{
 	$facebook_blue:#3b5998;
-	@include snsbasic($facebook_blue);
+	@include snsbasic($facebook_blue,"../img/sns/facebook.png");
+}
+.team_link{
+	$tsukalab_color:#00a1e9;
+	@include snsbasic($tsukalab_color,"../img/sns/facebook.png");
 }

@@ -58,7 +58,7 @@ body #main {
   margin-top: 20px;
 }
 
-#questions #normalLink, #start #normalLink {
+#questions .normalLink, #start .normalLink {
   position: absolute;
   top: 430px;
 }
@@ -492,14 +492,27 @@ input[type="text"]:focus, input[type="number"]:focus {
 
 /*その他ボタン*/
 /*=================================================*/
-#normalLink {
+.normalLink {
   height: 50px;
   width: 150px;
   display: table;
   text-align: center;
 }
 
-#normalLink a {
+.normalLink a {
+  display: table-cell;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+.widerLink {
+  height: 50px;
+  width: 200px;
+  display: table;
+  text-align: center;
+}
+
+.widerLink a {
   display: table-cell;
   vertical-align: middle;
   text-decoration: none;
@@ -509,6 +522,27 @@ input[type="text"]:focus, input[type="number"]:focus {
   padding-left: 50px;
 }
 
+#snsLinks {
+  margin: 0px auto;
+  height: 50px;
+  list-style-type: none;
+}
+
+#snsLinks li {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+}
+
+#snsLinks li a {
+  display: block;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+}
+
+/*====================================================*/
 /*色分け*/
 .normal_color {
   border-radius: 10px;
@@ -522,14 +556,22 @@ input[type="text"]:focus, input[type="number"]:focus {
 }
 
 .twitter_color {
+  text-decoration: none;
   border-radius: 10px;
   position: relative;
   background-color: #55acee;
-  margin-left: 50px;
   color: #fff;
 }
 
 .twitter_color:hover {
+  filter: alpha(opacity=80);
+  -ms-filter: "alpha(opacity=80)";
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  opacity: 0.8;
+}
+
+.twitter_color:hover:before {
   filter: alpha(opacity=80);
   -ms-filter: "alpha(opacity=80)";
   -moz-opacity: 0.8;
@@ -551,10 +593,10 @@ input[type="text"]:focus, input[type="number"]:focus {
 }
 
 .facebook_color {
+  text-decoration: none;
   border-radius: 10px;
   position: relative;
   background-color: #3b5998;
-  margin-left: 50px;
   color: #fff;
 }
 
@@ -566,14 +608,59 @@ input[type="text"]:focus, input[type="number"]:focus {
   opacity: 0.8;
 }
 
+.facebook_color:hover:before {
+  filter: alpha(opacity=80);
+  -ms-filter: "alpha(opacity=80)";
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  opacity: 0.8;
+}
+
 .facebook_color:before {
   position: absolute;
-  background-image: url("../img/sns/TwitterLogo_white.png");
+  background-image: url("../img/sns/facebook.png");
   border-radius: 10px 0px 0px 10px;
   content: '';
   width: 50px;
   height: 50px;
   background-color: #3b5998;
+  z-index: 1;
+  top: 0;
+  left: 0px;
+}
+
+.team_link {
+  text-decoration: none;
+  border-radius: 10px;
+  position: relative;
+  background-color: #00a1e9;
+  color: #fff;
+}
+
+.team_link:hover {
+  filter: alpha(opacity=80);
+  -ms-filter: "alpha(opacity=80)";
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  opacity: 0.8;
+}
+
+.team_link:hover:before {
+  filter: alpha(opacity=80);
+  -ms-filter: "alpha(opacity=80)";
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  opacity: 0.8;
+}
+
+.team_link:before {
+  position: absolute;
+  background-image: url("../img/sns/facebook.png");
+  border-radius: 10px 0px 0px 10px;
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-color: #00a1e9;
   z-index: 1;
   top: 0;
   left: 0px;
