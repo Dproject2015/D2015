@@ -91,18 +91,10 @@ body {
   	}
   }
   #normalLink{
+    //display: inline-block;
     $h:50px;
     position: absolute;
-    height: $h;
-    width: 150px;
     top:$imgHeight - $h - 120px;
-    display: table;
-    text-align: center;
-    a{
-      display: table-cell;
-      vertical-align: middle;
-      text-decoration: none;
-    }
   }
   #about{
     position:absolute;
