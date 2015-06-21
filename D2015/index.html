@@ -50,7 +50,9 @@
 			}
 			//入力項目を出現させる
 			function questionShow(){
-				questionBox.delay(duration).show(duration);
+				questionBox.delay(duration).animate({
+					opacity:'show'
+				},duration);
 			}
 			$('#start #startButton span').click(function(){
 				startHide();
@@ -65,7 +67,7 @@
 	<div id = "main">
 		<div id ="start">
 				<div id = "startButton">
-					<span>START</span>
+					<span>Click to Start</span>
 				</div>
 		</div>
 		<div id = "questions">
