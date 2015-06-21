@@ -63,7 +63,7 @@ body #main {
 #start #startButton {
   position: absolute;
   width: 150px;
-  height: 1.5em;
+  height: 4em;
   top: 0;
   left: 0;
   right: 0;
@@ -457,7 +457,7 @@ input[type="text"]:focus, input[type="number"]:focus {
   margin-right: 20px;
 }
 
-#startButton span {
+#startButton .start_b {
   background-color: rgba(255, 255, 255, 0.6);
   color: #564539;
   border-radius: 10px;
@@ -466,7 +466,7 @@ input[type="text"]:focus, input[type="number"]:focus {
   transition: all 0.3s ease;
 }
 
-#startButton span:hover {
+#startButton .start_b:hover {
   background-color: #564539;
   color: #fff;
 }
