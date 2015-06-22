@@ -1,13 +1,14 @@
 $(function(){
 	var soundP = 70;
 	//塚本先生ボイスファイル
-	var TsukaSound = ["a-sounan","eee","illusion","sasuga","seki","sindoiwa","soredeka",
+	//なんでも使える音声
+	var All = ["a-sounan","eee","illusion","sasuga","seki","sindoiwa","soredeka",
 	"sugoiyo","uwa-sugoina","wakaran","warai1","warai2","ahahasoredeka","akanwa","aso",
 	"asonan","asugoina","dream","eee2","iine_nakanaka","takaine"];
 	//寺田先生ボイスファイル
-	var TeraSound = ["amajide","asonanya","barabarayana","funfun","hahaha","hai",
+	/*var TeraSound = ["amajide","asonanya","barabarayana","funfun","hahaha","hai",
 	"haihai","haihai2","haihai3","haihai4","he","naruhodo","naruhodo2","naruhodo3",
-	"niiii","soyana","soyana2"];
+	"niiii","soyana","soyana2"];*/
 	$(":radio").change(function(event) {
 		//ラジオボタンがチェックされたら
 		/* Act on the event */
@@ -16,13 +17,25 @@ $(function(){
 			$('#voice').remove();
 		}
 		var target = $(event.target);
+		//質問番号によって分岐
 		//選択肢の番号によって分岐させる場合
-		var selectedNumber = Number($(target).val());
+		//var selectedNumber = Number($(target).val());
 
 		//塚本先生ボイスor寺田先生ボイスor鳴らさないを決定
-		var voiceflag = TsukaOrTera();
+		//var voiceflag = TsukaOrTera();
 		//結果で条件分岐
-		if(voiceflag == "Tsukamoto"){
+		//乱数で鳴らす音声を決定する
+		var VoiceNum = All.length-1;
+		//乱数で配列の要素番号をランダムに指定
+		var soundNum = Math.floor(Math.random()*VoiceNum);
+		//soundNum番目の文字列取得
+		var name = "all/"+All[soundNum];
+		CreateAudio(name);
+		var count = 0;
+		//1000ms待機してから再生
+		setTimeout("sound('"+count+"')",1000);
+		count = 1;
+		/*if(voiceflag == "Tsukamoto"){
 			//塚本先生ボイスなら
 			//配列の長さを取得
 			var TsukaVoices = TsukaSound.length-1;
@@ -44,12 +57,12 @@ $(function(){
 			var count = 0;
 			setTimeout("sound('"+count+"')",1000);
 			count = 1;
-		}
+		}*/
 	});
 });
 function CreateAudio(name){
 	var path = "sound/se/voices/";
-	//var tsuka = "tsukamoto";
+,	//var tsuka = "tsukamoto";
 	//var tera = "terada";
 	var audio = document.createElement("audio");
 	//ID要素を設定
