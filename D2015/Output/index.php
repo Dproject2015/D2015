@@ -218,7 +218,7 @@
 				//facebookリンク生成
 				document.getElementById("facebookLink").href='https://www.facebook.com/sharer/sharer.php?u='+pagelink;
 				//Lineリンク生成
-				document.getElementById("lineLink").href='http://line.me/R/msg/text/?'+encodeURIComponent(linktext);
+				document.getElementById("lineLink").href='http://line.me/R/msg/text/?'+encodeURIComponent(linktext) + ' '+ pagelink;
 			}
 		</script>
     
@@ -248,12 +248,15 @@
 		</div>
 		<div id="links">
 			<div class="widerLink">
-				<a href="#" class="normal_button team_link">このチームについて</a>
+				<!--リンク先を動的に変更-->
+				<a id = "teamLink" href="#" class="normal_button team_link" target="_blank">このチームについて</a>
 			</div>
 			<ul id="snsLinks">
-				<li><a href="#" class="normal_button twitter_color">ツイート</a></li>
-				<li><a href="#" class="normal_button facebook_color">シェア</a></li>
-				<li><a href="#" class="normal_button line_color">LINEに投稿</a></li>
+				<!--リンク先を動的に変更-->
+				<!--中身は上のjsで自動的に変更してくれるので上のjsを参照されたし-->
+				<li><a id = "twitterLink" href="#" class="normal_button twitter_color" onclick="window.open(this.href,'','width=650,height=450,menubar=no,toolbar=no,scrollbars=yes');return false;">ツイートする</a></li>
+				<li><a id="facebookLink" href="#" class="normal_button facebook_color" onclick="window.open(this.href,'','width=650,height=450,menubar=no,toolbar=no,scrollbars=yes');return false;">シェアする</a></li>
+				<li><a id = "lineLink" href="#" class="normal_button line_color" target="_blank">LINEで送る</a></li>
 				<!--<li><a href="#" class="normal_button team_link">このチームについて</a></li>-->
 			</ul>
 		</div>
