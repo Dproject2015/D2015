@@ -9,20 +9,27 @@
 	-khtml-opacity:$o/100;
 	opacity:$o/100;
 }
+@mixin dropshadow{
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+}
+@mixin noneshadow{
+	box-shadow: none;
+}
 @mixin snsbasic($color:#55acee,$path:"../img/sns/TwitterLogo_white.png"){
 	text-decoration: none;
 	border-radius: 10px;
 	position: relative;
 	background-color: $color;
+	@include dropshadow;
 	//margin-left: 50px;
 	color: #fff;
 	&:hover{
 		//background-color: $twitter_black;
 		//color: $twitter_black;
-		@include opacity_ctrl;
+		@include noneshadow;
 		//border: 1px solid $twitter_black;
 		&:before{
-			@include opacity_ctrl;
+			@include noneshadow;
 		}
 	}
 	&:before{
@@ -38,11 +45,12 @@
 		z-index: 1;
 		top: 0;
 		left: 0px;
+		//@include dropshadow;
 	}
 }
 $snsW:150px;
 $snsH:50px;
-$wider:200px;
+$wider:250px;
 @mixin linkBase($w:$snsWidth){
 	height: $snsH;
     width: $w;
@@ -55,6 +63,7 @@ $wider:200px;
       display: table-cell;
       vertical-align: middle;
       text-decoration: none;
+      //@include dropshadow;
       //height: 100%;
       //padding: 0 15px;
     }
@@ -73,12 +82,12 @@ $wider:200px;
 .widerLink{
 	@include linkBase($wider);
 }
-.snsLink{
-	//text-align: left;
-	padding: {
-		left: $snsH
-	}
-}
+//.snsLink{
+//	//text-align: left;
+//	padding: {
+//		left: $snsH
+//	}
+//}
 #snsLinks{
 	margin:0px auto;
 	height: $snsH;
@@ -97,6 +106,7 @@ $wider:200px;
 			width: $snsW;
 			height: $snsH;
 			line-height: $snsH;
+			//@include dropshadow;
 			//top: 0px;
 			//right: 0px;
 			//bottom: 0px;
@@ -118,13 +128,22 @@ $wider:200px;
 .twitter_color{
 	//display: inline-block;
 	$twitter_blue:#55acee;
+	padding: {
+		left: $snsH;
+	}
 	@include snsbasic($twitter_blue,"../img/sns/TwitterLogo_white.png");
 }
 .facebook_color{
 	$facebook_blue:#3b5998;
+	padding: {
+		left: $snsH;
+	}
 	@include snsbasic($facebook_blue,"../img/sns/facebook.png");
 }
 .team_link{
 	$tsukalab_color:#00a1e9;
-	@include snsbasic($tsukalab_color,"../img/sns/facebook.png");
+	padding: {
+		left: $snsH;
+	}
+	@include snsbasic($tsukalab_color,"../img/sns/simplelogo.png");
 }

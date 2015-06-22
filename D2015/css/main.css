@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*基本デザイン*/
 /*=================================================*/
 html {
@@ -15,7 +14,6 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
-
 body > #contents {
   /*height:auto;*/
   height: 100%;
@@ -26,7 +24,6 @@ body > #contents {
   padding-right: 0px;
   padding-left: 0px;
 }
-
 body #main {
   padding-top: 40px;
   padding-bottom: 30px;
@@ -53,21 +50,19 @@ body #main {
   /*display: none;*/
   /*font-family: $mainFont;*/
 }
-
 #questions #submit, #start #submit {
   margin-top: 20px;
 }
-
 #questions .normalLink, #start .normalLink {
   position: absolute;
   top: 430px;
 }
-
 #questions #about, #start #about {
   position: absolute;
   width: 490px;
   height: 380px;
   padding: 10px;
+  margin-top: 5px;
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -76,7 +71,6 @@ body #main {
   height: 500px;
   position: relative;
 }
-
 #start #startButton {
   position: absolute;
   width: 150px;
@@ -88,7 +82,6 @@ body #main {
   margin: auto;
   display: table;
 }
-
 #start #startButton span {
   padding: 0;
   text-align: center;
@@ -107,14 +100,18 @@ h1, h2 {
   margin-bottom: 0px;
 }
 
+h2 {
+  margin-top: 0px;
+}
+
 hr.grad {
   margin: 0;
   border: 0;
   height: 1px;
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5), transparent);
-  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5), transparent);
-  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5), transparent);
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5), transparent);
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 }
 
 form {
@@ -125,7 +122,6 @@ form {
 .intro {
   margin: 0;
 }
-
 .intro .round {
   -moz-border-radius: 15.4px;
   -webkit-border-radius: 15.4px;
@@ -143,7 +139,6 @@ form {
 .q {
   height: 50px;
 }
-
 .q li {
   margin-left: 80px;
   padding-top: 0;
@@ -153,13 +148,11 @@ form {
 #qList {
   padding: 0;
 }
-
 #qList > li {
   padding-top: 0px;
   font-weight: bold;
   list-style-type: upper-roman;
 }
-
 #qList ul {
   font-weight: normal;
 }
@@ -169,7 +162,6 @@ form {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 *:after, *::before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -181,28 +173,24 @@ form {
   max-width: 900px;
   margin: 0;
 }
-
 .ac-custom h2 {
   font-size: 3em;
   font-weight: 300;
   padding: 0 0 0.5em;
   margin: 0 0 30px;
 }
-
 .ac-custom ul {
   list-style: none;
   padding: 0;
   margin: 0 auto;
   max-width: 800px;
 }
-
 .ac-custom li, .ac-custom ol {
   margin: 0;
   padding: 0;
   margin-left: 20px;
   position: relative;
 }
-
 .ac-custom label {
   display: inline-block;
   position: relative;
@@ -214,7 +202,6 @@ form {
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
 }
-
 .ac-custom input[type="checkbox"], .ac-custom input[type="radio"] {
   width: 25px;
   height: 25px;
@@ -224,7 +211,6 @@ form {
   position: absolute;
   cursor: pointer;
 }
-
 .ac-custom label::before {
   width: 25px;
   height: 25px;
@@ -234,7 +220,6 @@ form {
   position: absolute;
   cursor: pointer;
 }
-
 .ac-custom input[type="checkbox"], .ac-custom input[type="radio"] {
   opacity: 0;
   -webkit-appearance: none;
@@ -242,7 +227,6 @@ form {
   vertical-align: middle;
   z-index: 100;
 }
-
 .ac-custom label::before {
   content: '';
   border: 4px solid rgba(0, 0, 0, 0.4);
@@ -257,11 +241,9 @@ form {
 .ac-custom input[type="checkbox"]:checked + label, .ac-custom input[type="radio"]:checked + label {
   color: black;
 }
-
 .ac-custom input[type="checkbox"]:checked + label::before, .ac-custom input[type="radio"]:checked + label::before {
   opacity: 1.0;
 }
-
 .ac-custom svg {
   position: absolute;
   width: 30px;
@@ -271,7 +253,6 @@ form {
   left: 0px;
   pointer-events: none;
 }
-
 .ac-custom svg path {
   stroke: #ff3300;
   stroke-width: 13px;
@@ -290,7 +271,6 @@ form {
   left: 10px;
   position: absolute;
 }
-
 .ac-circle label::before {
   width: 30px;
   height: 30px;
@@ -300,14 +280,12 @@ form {
   background-color: #fff;
   border: none;
 }
-
 .ac-circle svg {
   width: 70px;
   height: 70px;
   margin-top: -35px;
   left: -10px;
 }
-
 .ac-circle svg path {
   stroke-width: 5px;
 }
@@ -323,23 +301,19 @@ form {
   list-style: decimal;
   list-style-position: inside;
 }
-
 .ac-list ol li {
   font-size: 2em;
   padding: 1em 1em 0 2em;
   text-indent: -40px;
 }
-
 .ac-list ol li label {
   font-size: 1em;
   text-indent: 0;
   padding-left: 30px;
 }
-
 .ac-list label::before {
   display: none;
 }
-
 .ac-list svg {
   width: 100%;
   height: 80px;
@@ -347,7 +321,6 @@ form {
   top: 1.2em;
   margin-top: 0px;
 }
-
 .ac-list svg path {
   stroke-width: 4px;
 }
@@ -358,7 +331,6 @@ form {
     font-size: 80%;
   }
 }
-
 /*テキストボックスのデザイン*/
 /*=================================================*/
 input[type="text"], input[type="number"] {
@@ -375,15 +347,12 @@ input[type="text"], input[type="number"] {
   -webkit-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
   box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
 }
-
 input[type="text"] {
   width: 10em;
 }
-
 input[type="number"] {
   width: 6em;
 }
-
 input[type="text"]:focus, input[type="number"]:focus {
   border: solid 1px #EEA34A;
 }
@@ -413,7 +382,6 @@ input[type="text"]:focus, input[type="number"]:focus {
   background: rgba(255, 255, 255, 0.6);
   /*padding: $smallSkip;*/
 }
-
 .button:before, .button:after {
   content: "";
   position: absolute;
@@ -422,7 +390,6 @@ input[type="text"]:focus, input[type="number"]:focus {
   display: block;
   border-radius: 50%;
 }
-
 .button:before {
   top: -17px;
   left: 15px;
@@ -435,7 +402,6 @@ input[type="text"]:focus, input[type="number"]:focus {
   transition: 0.5s;
   background: rgba(255, 255, 255, 0.6);
 }
-
 .button:after {
   top: -25px;
   left: 25px;
@@ -448,13 +414,11 @@ input[type="text"]:focus, input[type="number"]:focus {
   transition: 0.5s;
   background: rgba(255, 255, 255, 0.6);
 }
-
 .button:hover {
   font-weight: bold;
   background: #564539;
   color: #fff;
 }
-
 .button:hover:before, .button:hover:after {
   background: #564539;
   color: #fff;
@@ -470,13 +434,11 @@ input[type="text"]:focus, input[type="number"]:focus {
   float: left;
   clear: both;
 }
-
 #dList dd {
   margin-left: 80px;
   margin-bottom: 10px;
   width: 400px;
 }
-
 #dList dd li {
   margin-left: 0;
   margin-right: 20px;
@@ -498,7 +460,6 @@ input[type="text"]:focus, input[type="number"]:focus {
   display: table;
   text-align: center;
 }
-
 .normalLink a {
   display: table-cell;
   vertical-align: middle;
@@ -507,19 +468,14 @@ input[type="text"]:focus, input[type="number"]:focus {
 
 .widerLink {
   height: 50px;
-  width: 200px;
+  width: 250px;
   display: table;
   text-align: center;
 }
-
 .widerLink a {
   display: table-cell;
   vertical-align: middle;
   text-decoration: none;
-}
-
-.snsLink {
-  padding-left: 50px;
 }
 
 #snsLinks {
@@ -527,14 +483,12 @@ input[type="text"]:focus, input[type="number"]:focus {
   height: 50px;
   list-style-type: none;
 }
-
 #snsLinks li {
   display: inline-block;
   width: 150px;
   height: 50px;
   text-align: center;
 }
-
 #snsLinks li a {
   display: block;
   width: 150px;
@@ -549,36 +503,26 @@ input[type="text"]:focus, input[type="number"]:focus {
   background-color: rgba(255, 255, 255, 0.6);
   color: #564539;
 }
-
 .normal_color:hover {
   background-color: #564539;
   color: #fff;
 }
 
 .twitter_color {
+  padding-left: 50px;
   text-decoration: none;
   border-radius: 10px;
   position: relative;
   background-color: #55acee;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
   color: #fff;
 }
-
 .twitter_color:hover {
-  filter: alpha(opacity=80);
-  -ms-filter: "alpha(opacity=80)";
-  -moz-opacity: 0.8;
-  -khtml-opacity: 0.8;
-  opacity: 0.8;
+  box-shadow: none;
 }
-
 .twitter_color:hover:before {
-  filter: alpha(opacity=80);
-  -ms-filter: "alpha(opacity=80)";
-  -moz-opacity: 0.8;
-  -khtml-opacity: 0.8;
-  opacity: 0.8;
+  box-shadow: none;
 }
-
 .twitter_color:before {
   position: absolute;
   background-image: url("../img/sns/TwitterLogo_white.png");
@@ -593,29 +537,20 @@ input[type="text"]:focus, input[type="number"]:focus {
 }
 
 .facebook_color {
+  padding-left: 50px;
   text-decoration: none;
   border-radius: 10px;
   position: relative;
   background-color: #3b5998;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
   color: #fff;
 }
-
 .facebook_color:hover {
-  filter: alpha(opacity=80);
-  -ms-filter: "alpha(opacity=80)";
-  -moz-opacity: 0.8;
-  -khtml-opacity: 0.8;
-  opacity: 0.8;
+  box-shadow: none;
 }
-
 .facebook_color:hover:before {
-  filter: alpha(opacity=80);
-  -ms-filter: "alpha(opacity=80)";
-  -moz-opacity: 0.8;
-  -khtml-opacity: 0.8;
-  opacity: 0.8;
+  box-shadow: none;
 }
-
 .facebook_color:before {
   position: absolute;
   background-image: url("../img/sns/facebook.png");
@@ -630,32 +565,23 @@ input[type="text"]:focus, input[type="number"]:focus {
 }
 
 .team_link {
+  padding-left: 50px;
   text-decoration: none;
   border-radius: 10px;
   position: relative;
   background-color: #00a1e9;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
   color: #fff;
 }
-
 .team_link:hover {
-  filter: alpha(opacity=80);
-  -ms-filter: "alpha(opacity=80)";
-  -moz-opacity: 0.8;
-  -khtml-opacity: 0.8;
-  opacity: 0.8;
+  box-shadow: none;
 }
-
 .team_link:hover:before {
-  filter: alpha(opacity=80);
-  -ms-filter: "alpha(opacity=80)";
-  -moz-opacity: 0.8;
-  -khtml-opacity: 0.8;
-  opacity: 0.8;
+  box-shadow: none;
 }
-
 .team_link:before {
   position: absolute;
-  background-image: url("../img/sns/facebook.png");
+  background-image: url("../img/sns/simplelogo.png");
   border-radius: 10px 0px 0px 10px;
   content: '';
   width: 50px;
