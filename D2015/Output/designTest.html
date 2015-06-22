@@ -32,6 +32,8 @@
 			document.getElementById("twitterLink").href='https://twitter.com/intent/tweet?hashtags=S2SortingHat&text='+encodeURIComponent(linktext)+'&url='+pagelink;
 			//facebookリンク生成
 			document.getElementById("facebookLink").href='https://www.facebook.com/sharer/sharer.php?u='+pagelink;
+			//Lineリンク生成
+			document.getElementById("lineLink").href='http://line.me/R/msg/text/?'+encodeURIComponent(linktext);
 		}
 	</script>
 </head>
@@ -49,7 +51,7 @@
 				<!--hrefの中身を変更してくれればOK-->
 				<li><a id = "twitterLink" href="#" class="normal_button twitter_color" onclick="window.open(this.href,'','width=650,height=450,menubar=no,toolbar=no,scrollbars=yes');return false;">ツイート</a></li>
 				<li><a id="facebookLink" href="#" class="normal_button facebook_color" onclick="window.open(this.href,'','width=650,height=450,menubar=no,toolbar=no,scrollbars=yes');return false;">シェア</a></li>
-				<li><a href="#" class="normal_button line_color" onclick="window.open(this.href,'','width=650,height=450,menubar=no,toolbar=no,scrollbars=yes');return false;">LINEに投稿</a></li>
+				<li><a id = "lineLink" href="#" class="normal_button line_color" target="_blank">LINEに投稿</a></li>
 				<!--<li><a href="#" class="normal_button team_link">このチームについて</a></li>-->
 			</ul>
 		</div>
