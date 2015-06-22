@@ -86,7 +86,8 @@ function sound(num){
 	}
 	$("#voice").get(0).play();
 }
-//塚本先生か寺田先生か鳴らすか鳴らさないかを決める
+//ここから下は使わない===================================
+//塚本先生か寺田先生か鳴らすか鳴らさないかを決める===========
 function TsukaOrTera(){
 	var val = Math.floor(Math.random()*2);
 	switch(val){
