@@ -28,6 +28,12 @@
                 content: {
                     dom: [
                         {
+                            id: 'old-pape_L',
+                            type: 'image',
+                            rect: ['0', '0', '798px', '600px', 'auto', 'auto'],
+                            fill: ["rgba(0,0,0,0)",im+"old-pape_L.png",'0px','0px']
+                        },
+                        {
                             id: 'Right',
                             type: 'text',
                             rect: ['106px', '116', 'auto', 'auto', 'auto', 'auto'],
@@ -94,18 +100,17 @@
                             transform: [[],[],[],['0.7','0.7']]
                         },
                         {
-                            id: 'yourTeam',
-                            type: 'text',
-                            rect: ['6px', '354px', '800px', '75px', 'auto', 'auto'],
-                            text: "◯○チーム！！",
-                            align: "center",
-                            font: ['\'ヒラギノ角ゴ Pro W3\', \'Hiragino Kaku Gothic Pro\', メイリオ, Meiryo, ＭＳＰゴシック, \'MS PGothic\', sans-serif', [50, "px"], "rgba(0,0,0,1)", "400", "none solid rgb(0, 0, 0)", "normal", "break-word", ""],
-                            filter: [0, 0, 1, 1, 0, 0, 0, 300, "rgba(0,0,0,0)", 0, 0, 0]
-                        },
-                        {
                             id: 'wearable2',
                             type: 'image',
-                            rect: ['216px', '4px', '380px', '409px', 'auto', 'auto'],
+                            rect: ['383px', '5px', '380px', '409px', 'auto', 'auto'],
+                            fill: ["rgba(0,0,0,0)",im+"wearable2.png",'0px','0px'],
+                            filter: [0, 0, 1, 1, 0, 0, 0, 300, "rgba(0,0,0,0)", 0, 0, 0],
+                            transform: [[],[],[],['0.75','0.75']]
+                        },
+                        {
+                            id: 'wearable2Copy',
+                            type: 'image',
+                            rect: ['23px', '7px', '380px', '409px', 'auto', 'auto'],
                             fill: ["rgba(0,0,0,0)",im+"wearable2.png",'0px','0px'],
                             filter: [0, 0, 1, 1, 0, 0, 0, 300, "rgba(0,0,0,0)", 0, 0, 0],
                             transform: [[],[],[],['0.75','0.75']]
@@ -119,6 +124,24 @@
                             rect: ['526', '169', '320px', '45px', 'auto', 'auto'],
                             source: [aud+"tokyokansei_arranged.mp3"],
                             preload: 'auto'
+                        },
+                        {
+                            id: 'RoundRect',
+                            type: 'rect',
+                            rect: ['142px', '216px', '530px', '148px', 'auto', 'auto'],
+                            borderRadius: ["10px", "10px", "10px", "10px"],
+                            opacity: '0',
+                            fill: ["rgba(218,218,218,1.00)"],
+                            stroke: [0,"rgba(0,0,0,1)","none"]
+                        },
+                        {
+                            id: 'yourTeam',
+                            type: 'text',
+                            rect: ['118px', '216px', '567px', '75px', 'auto', 'auto'],
+                            text: "双見よりの<br>ウェアラブルチーム！",
+                            align: "center",
+                            font: ['\'ヒラギノ角ゴ Pro W3\', \'Hiragino Kaku Gothic Pro\', メイリオ, Meiryo, ＭＳＰゴシック, \'MS PGothic\', sans-serif', [50, "px"], "rgba(0,0,0,1)", "400", "none solid rgb(0, 0, 0)", "normal", "break-word", ""],
+                            filter: [0, 0, 1, 1, 0, 0, 0, 300, "rgba(0,0,0,0)", 0, 0, 0]
                         }
                     ],
                     style: {
@@ -135,14 +158,153 @@
                     autoPlay: true,
                     data: [
                         [
-                            "eid168",
+                            "eid15",
+                            "filter.blur",
+                            1429,
+                            1208,
+                            "linear",
+                            "${Decided}",
+                            '100px',
+                            '0px'
+                        ],
+                        [
+                            "eid28",
+                            "filter.blur",
+                            5250,
+                            750,
+                            "linear",
+                            "${Decided}",
+                            '0px',
+                            '100px'
+                        ],
+                        [
+                            "eid169",
+                            "top",
+                            16667,
+                            1750,
+                            "easeInQuart",
+                            "${yourTeam}",
+                            '222px',
+                            '216px'
+                        ],
+                        [
+                            "eid199",
+                            "height",
+                            16667,
+                            1754,
+                            "easeInQuart",
+                            "${yourTeam}",
+                            '75px',
+                            '148px'
+                        ],
+                        [
+                            "eid193",
+                            "top",
+                            16667,
+                            1750,
+                            "easeInQuart",
+                            "${wearable2Copy}",
+                            '-149px',
+                            '7px'
+                        ],
+                        [
+                            "eid25",
+                            "left",
+                            3000,
+                            1208,
+                            "linear",
+                            "${your_team_is}",
+                            '106px',
+                            '115px'
+                        ],
+                        [
+                            "eid195",
+                            "scaleX",
+                            16667,
+                            0,
+                            "easeInQuart",
+                            "${wearable2Copy}",
+                            '0.75',
+                            '0.75'
+                        ],
+                        [
+                            "eid170",
+                            "filter.blur",
+                            16667,
+                            1750,
+                            "easeInQuart",
+                            "${wearable2}",
+                            '300px',
+                            '0px'
+                        ],
+                        [
+                            "eid176",
+                            "scaleX",
+                            16667,
+                            0,
+                            "easeInQuart",
+                            "${wearable2}",
+                            '0.75',
+                            '0.75'
+                        ],
+                        [
+                            "eid136",
+                            "filter.blur",
+                            5835,
+                            4579,
+                            "easeInQuart",
+                            "${media}",
+                            '300px',
+                            '0px'
+                        ],
+                        [
+                            "eid139",
+                            "filter.blur",
+                            10414,
+                            531,
+                            "easeInQuart",
+                            "${media}",
+                            '0.000000px',
+                            '0px'
+                        ],
+                        [
+                            "eid140",
+                            "filter.blur",
+                            10945,
+                            555,
+                            "easeInQuart",
+                            "${media}",
+                            '0px',
+                            '300px'
+                        ],
+                        [
+                            "eid146",
+                            "location",
+                            8838,
+                            5489,
+                            "easeInQuint",
+                            "${life}",
+                            [[115.01, 48.24, 0, 0, 0, 0,0],[694.63, 518.98, 0, 0, 0, 0,746.7]]
+                        ],
+                        [
+                            "eid204",
                             "left",
                             18417,
                             0,
                             "easeInQuart",
                             "${yourTeam}",
-                            '6px',
-                            '6px'
+                            '128px',
+                            '128px'
+                        ],
+                        [
+                            "eid205",
+                            "left",
+                            18421,
+                            0,
+                            "easeInQuart",
+                            "${yourTeam}",
+                            '128px',
+                            '128px'
                         ],
                         [
                             "eid177",
@@ -153,6 +315,133 @@
                             "${wearable2}",
                             '0.75',
                             '0.75'
+                        ],
+                        [
+                            "eid105",
+                            "location",
+                            4669,
+                            5489,
+                            "easeInBack",
+                            "${recognition}",
+                            [[133.01, 457.9, 0, 0, 0, 0,0],[667, 152, 0, 0, 0, 0,615.4]]
+                        ],
+                        [
+                            "eid185",
+                            "width",
+                            18421,
+                            0,
+                            "easeInQuart",
+                            "${yourTeam}",
+                            '567px',
+                            '567px'
+                        ],
+                        [
+                            "eid150",
+                            "location",
+                            10426,
+                            5489,
+                            "easeInCirc",
+                            "${ihci}",
+                            [[406, 6.69, 0, 0, 0, 0,0],[406.01, 553.43, 0, 0, 0, 0,546.74]]
+                        ],
+                        [
+                            "eid142",
+                            "location",
+                            7426,
+                            5489,
+                            "easeInQuint",
+                            "${wearable}",
+                            [[700.59, 122.44, 0, 0, 0, 0,0],[133, 486.22, 0, 0, 0, 0,674.16]]
+                        ],
+                        [
+                            "eid92",
+                            "volume",
+                            20250,
+                            2580,
+                            "linear",
+                            "${tokyokansei_arranged}",
+                            '1',
+                            '0'
+                        ],
+                        [
+                            "eid17",
+                            "filter.blur",
+                            3000,
+                            1208,
+                            "linear",
+                            "${your_team_is}",
+                            '100px',
+                            '0px'
+                        ],
+                        [
+                            "eid27",
+                            "filter.blur",
+                            5250,
+                            750,
+                            "linear",
+                            "${your_team_is}",
+                            '0px',
+                            '100px'
+                        ],
+                        [
+                            "eid207",
+                            "left",
+                            18417,
+                            0,
+                            "easeInQuart",
+                            "${wearable2}",
+                            '406px',
+                            '406px'
+                        ],
+                        [
+                            "eid208",
+                            "left",
+                            18421,
+                            0,
+                            "easeInQuart",
+                            "${wearable2}",
+                            '406px',
+                            '406px'
+                        ],
+                        [
+                            "eid14",
+                            "filter.blur",
+                            613,
+                            1000,
+                            "linear",
+                            "${Right}",
+                            '100px',
+                            '0px'
+                        ],
+                        [
+                            "eid29",
+                            "filter.blur",
+                            5250,
+                            750,
+                            "linear",
+                            "${Right}",
+                            '0px',
+                            '100px'
+                        ],
+                        [
+                            "eid23",
+                            "left",
+                            1429,
+                            2071,
+                            "linear",
+                            "${Decided}",
+                            '106px',
+                            '115px'
+                        ],
+                        [
+                            "eid211",
+                            "opacity",
+                            17556,
+                            861,
+                            "easeInQuart",
+                            "${RoundRect}",
+                            '0',
+                            '0.6489138603210449'
                         ],
                         [
                             "eid147",
@@ -171,6 +460,26 @@
                             561,
                             "easeInQuint",
                             "${life}",
+                            '0px',
+                            '300px'
+                        ],
+                        [
+                            "eid143",
+                            "filter.blur",
+                            7250,
+                            4579,
+                            "easeInQuart",
+                            "${wearable}",
+                            '300px',
+                            '0px'
+                        ],
+                        [
+                            "eid157",
+                            "filter.blur",
+                            12415,
+                            500,
+                            "easeInQuart",
+                            "${wearable}",
                             '0px',
                             '300px'
                         ],
@@ -205,25 +514,6 @@
                             '300px'
                         ],
                         [
-                            "eid169",
-                            "top",
-                            16667,
-                            1750,
-                            "easeInQuart",
-                            "${yourTeam}",
-                            '222px',
-                            '354px'
-                        ],
-                        [
-                            "eid150",
-                            "location",
-                            10426,
-                            5489,
-                            "easeInCirc",
-                            "${ihci}",
-                            [[406, 6.69, 0, 0, 0, 0,0],[406.01, 553.43, 0, 0, 0, 0,546.74]]
-                        ],
-                        [
                             "eid83",
                             "filter.blur",
                             16667,
@@ -234,33 +524,14 @@
                             '0px'
                         ],
                         [
-                            "eid25",
+                            "eid198",
                             "left",
-                            3000,
-                            1208,
-                            "linear",
-                            "${your_team_is}",
-                            '106px',
-                            '115px'
-                        ],
-                        [
-                            "eid142",
-                            "location",
-                            7426,
-                            5489,
-                            "easeInQuint",
-                            "${wearable}",
-                            [[700.59, 122.44, 0, 0, 0, 0,0],[133, 486.22, 0, 0, 0, 0,674.16]]
-                        ],
-                        [
-                            "eid92",
-                            "volume",
-                            20250,
-                            2580,
-                            "linear",
-                            "${tokyokansei_arranged}",
-                            '1',
-                            '0'
+                            16667,
+                            1754,
+                            "easeInQuart",
+                            "${wearable2Copy}",
+                            '443px',
+                            '23px'
                         ],
                         [
                             "eid20",
@@ -273,62 +544,32 @@
                             '115px'
                         ],
                         [
-                            "eid170",
-                            "filter.blur",
+                            "eid175",
+                            "top",
                             16667,
                             1750,
                             "easeInQuart",
                             "${wearable2}",
+                            '-149px',
+                            '5px'
+                        ],
+                        [
+                            "eid196",
+                            "filter.blur",
+                            16667,
+                            1750,
+                            "easeInQuart",
+                            "${wearable2Copy}",
                             '300px',
                             '0px'
                         ],
                         [
-                            "eid184",
-                            "left",
-                            18421,
-                            0,
-                            "linear",
-                            "${wearable2}",
-                            '216px',
-                            '216px'
-                        ],
-                        [
-                            "eid14",
-                            "filter.blur",
-                            613,
-                            1000,
-                            "linear",
-                            "${Right}",
-                            '100px',
-                            '0px'
-                        ],
-                        [
-                            "eid29",
-                            "filter.blur",
-                            5250,
-                            750,
-                            "linear",
-                            "${Right}",
-                            '0px',
-                            '100px'
-                        ],
-                        [
-                            "eid23",
-                            "left",
-                            1429,
-                            2071,
-                            "linear",
-                            "${Decided}",
-                            '106px',
-                            '115px'
-                        ],
-                        [
-                            "eid176",
-                            "scaleX",
+                            "eid194",
+                            "scaleY",
                             16667,
                             0,
                             "easeInQuart",
-                            "${wearable2}",
+                            "${wearable2Copy}",
                             '0.75',
                             '0.75'
                         ],
@@ -351,134 +592,6 @@
                             "${ihci}",
                             '0px',
                             '300px'
-                        ],
-                        [
-                            "eid15",
-                            "filter.blur",
-                            1429,
-                            1208,
-                            "linear",
-                            "${Decided}",
-                            '100px',
-                            '0px'
-                        ],
-                        [
-                            "eid28",
-                            "filter.blur",
-                            5250,
-                            750,
-                            "linear",
-                            "${Decided}",
-                            '0px',
-                            '100px'
-                        ],
-                        [
-                            "eid146",
-                            "location",
-                            8838,
-                            5489,
-                            "easeInQuint",
-                            "${life}",
-                            [[115.01, 48.24, 0, 0, 0, 0,0],[694.63, 518.98, 0, 0, 0, 0,746.7]]
-                        ],
-                        [
-                            "eid143",
-                            "filter.blur",
-                            7250,
-                            4579,
-                            "easeInQuart",
-                            "${wearable}",
-                            '300px',
-                            '0px'
-                        ],
-                        [
-                            "eid157",
-                            "filter.blur",
-                            12415,
-                            500,
-                            "easeInQuart",
-                            "${wearable}",
-                            '0px',
-                            '300px'
-                        ],
-                        [
-                            "eid105",
-                            "location",
-                            4669,
-                            5489,
-                            "easeInBack",
-                            "${recognition}",
-                            [[133.01, 457.9, 0, 0, 0, 0,0],[667, 152, 0, 0, 0, 0,615.4]]
-                        ],
-                        [
-                            "eid175",
-                            "top",
-                            16667,
-                            1750,
-                            "easeInQuart",
-                            "${wearable2}",
-                            '-149px',
-                            '4px'
-                        ],
-                        [
-                            "eid17",
-                            "filter.blur",
-                            3000,
-                            1208,
-                            "linear",
-                            "${your_team_is}",
-                            '100px',
-                            '0px'
-                        ],
-                        [
-                            "eid27",
-                            "filter.blur",
-                            5250,
-                            750,
-                            "linear",
-                            "${your_team_is}",
-                            '0px',
-                            '100px'
-                        ],
-                        [
-                            "eid136",
-                            "filter.blur",
-                            5835,
-                            4579,
-                            "easeInQuart",
-                            "${media}",
-                            '300px',
-                            '0px'
-                        ],
-                        [
-                            "eid139",
-                            "filter.blur",
-                            10414,
-                            531,
-                            "easeInQuart",
-                            "${media}",
-                            '0.000000px',
-                            '0px'
-                        ],
-                        [
-                            "eid140",
-                            "filter.blur",
-                            10945,
-                            555,
-                            "easeInQuart",
-                            "${media}",
-                            '0px',
-                            '300px'
-                        ],
-                        [
-                            "eid86",
-                            "height",
-                            16667,
-                            0,
-                            "easeInQuart",
-                            "${yourTeam}",
-                            '75px',
-                            '75px'
                         ],
                         [
                             "eid135",
