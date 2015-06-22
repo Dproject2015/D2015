@@ -146,11 +146,11 @@
 			var txt = new Array();
     			txt[0] = "ライフチーム！！";
     			txt[1] = "IHCIチーム！！";
-    			txt[2] = "環境メディアチーム！！";
-    			txt[3] = "ウェアラブルチーム！！";
-    			txt[4] = "環境メディアチーム！！";
+    			txt[2] = "土田よりの環境メディアチーム！！";
+    			txt[3] = "渡邊よりのウェアラブルチーム！！";
+    			txt[4] = "菅家よりの環境メディアチーム！！";
     			txt[5] = "認識チーム！！";
-    			txt[6] = "ウェアラブルチーム！！";
+    			txt[6] = "双見よりのウェアラブルチーム！！";
     		var res_img = new Array();
     			res_img[0] = "life.png";
     			res_img[1] = "ihci.png";
@@ -164,12 +164,66 @@
 				sfileName[0] = "tokyokansei_arranged.mp3";
 				sfileName[1] = "doraemon.mp3";
 				sfileName[2] = "soccer_kansei.mp3";
-				sfileName[3] = "wa_o.mp3";		
+				sfileName[3] = "wa_o.mp3";	
+				
+			var Link = {TeamName: Eng:};
+				Link.TeamName = new Array();
+				Link.Eng = new Array();	
+				
+				Link.teamName[0] = 'ライフ';
+				Link.teamName[1] = 'IHCI';
+				Link.teamName[2] = '土田よりの環境メディア';
+				Link.teamName[3] = '渡邊よりのウェアラブル';
+				Link.teamName[4] = '菅家よりの環境メディア';
+				Link.teamName[5] = '認識';
+				Link.teamName[6] = '双見よりのウェアラブル';
+				Link.Eng[0] = 'life/';
+				Link.Eng[1] = 'ihci/';
+				Link.Eng[2] = 'media/';
+				Link.Eng[3] = 'wearable/';
+				Link.Eng[4] = 'media/';
+				Link.Eng[5] = 'awareness/';
+				Link.Eng[6] = 'wearable/';
+			/*
+			var link_teamName = new Array();
+				link_teamName[0] = 'ライフ';
+				link_teamName[1] = 'IHCI';
+				link_teamName[2] = '土田よりの環境メディア';
+				link_teamName[3] = '渡邊よりのウェアラブル';
+				link_teamName[4] = '菅家よりの環境メディア';
+				link_teamName[5] = '認識';
+				link_teamName[6] = '双見よりのウェアラブル';
+			var link_teamNameEng = new Array();
+				link_teamNameEng[0] = 'life/';
+				link_teamNameEng[1] = 'ihci/';
+				link_teamNameEng[2] = 'media/';
+				link_teamNameEng[3] = 'wearable/';
+				link_teamNameEng[4] = 'media/';
+				link_teamNameEng[5] = 'awareness/';
+				link_teamNameEng[6] = 'wearable/';
+			*/
 		</script>
 		<!--チーム決定 End-->	
     	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
     	<script type="text/javascript" charset="utf-8" src="edge_includes/edge.5.0.1.min.js"></script>
     	<script type="text/javascript" charset="utf-8" src="./OutputTest_edge.js"></script>
+    	<!--リンク生成系-->
+		<script>
+			window.onload=function(){
+				var teamName = 'ライフ';
+				var teamNameEng = 'life/';
+				var linktext = 'あなたのチームは'+Link.teamName[Team.Num]+'チームに決まりました。-神戸大学塚本・寺田研究室-';
+				var pagelink = 'http://cse.eedept.kobe-u.ac.jp/ito/D2015/inputTest/';
+				//チームリンク生成
+				document.getElementById("teamLink").href='http://cse.eedept.kobe-u.ac.jp/portfolio/'+Link.Eng[Team.Num];
+				//twitterリンク生成
+				document.getElementById("twitterLink").href='https://twitter.com/intent/tweet?hashtags=S2SortingHat&text='+encodeURIComponent(linktext)+'&url='+pagelink;
+				//facebookリンク生成
+				document.getElementById("facebookLink").href='https://www.facebook.com/sharer/sharer.php?u='+pagelink;
+				//Lineリンク生成
+				document.getElementById("lineLink").href='http://line.me/R/msg/text/?'+encodeURIComponent(linktext);
+			}
+		</script>
     
    
     

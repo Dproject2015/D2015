@@ -96,7 +96,7 @@
                         {
                             id: 'yourTeam',
                             type: 'text',
-                            rect: ['6px', '340px', '800px', '75px', 'auto', 'auto'],
+                            rect: ['6px', '354px', '800px', '75px', 'auto', 'auto'],
                             text: "◯○チーム！！",
                             align: "center",
                             font: ['\'ヒラギノ角ゴ Pro W3\', \'Hiragino Kaku Gothic Pro\', メイリオ, Meiryo, ＭＳＰゴシック, \'MS PGothic\', sans-serif', [50, "px"], "rgba(0,0,0,1)", "400", "none solid rgb(0, 0, 0)", "normal", "break-word", ""],
@@ -105,10 +105,10 @@
                         {
                             id: 'wearable2',
                             type: 'image',
-                            rect: ['216px', '-31px', '380px', '409px', 'auto', 'auto'],
-                            fill: ["rgba(0,0,0,0)","wearable2.png",'0px','0px'],
+                            rect: ['216px', '4px', '380px', '409px', 'auto', 'auto'],
+                            fill: ["rgba(0,0,0,0)",im+"wearable2.png",'0px','0px'],
                             filter: [0, 0, 1, 1, 0, 0, 0, 300, "rgba(0,0,0,0)", 0, 0, 0],
-                            transform: [[],[],[],['0.8','0.8']]
+                            transform: [[],[],[],['0.75','0.75']]
                         },
                         {
                             id: 'tokyokansei_arranged',
@@ -143,6 +143,16 @@
                             "${yourTeam}",
                             '6px',
                             '6px'
+                        ],
+                        [
+                            "eid177",
+                            "scaleY",
+                            16667,
+                            0,
+                            "easeInQuart",
+                            "${wearable2}",
+                            '0.75',
+                            '0.75'
                         ],
                         [
                             "eid147",
@@ -202,7 +212,7 @@
                             "easeInQuart",
                             "${yourTeam}",
                             '222px',
-                            '340px'
+                            '354px'
                         ],
                         [
                             "eid150",
@@ -273,6 +283,16 @@
                             '0px'
                         ],
                         [
+                            "eid184",
+                            "left",
+                            18421,
+                            0,
+                            "linear",
+                            "${wearable2}",
+                            '216px',
+                            '216px'
+                        ],
+                        [
                             "eid14",
                             "filter.blur",
                             613,
@@ -301,6 +321,16 @@
                             "${Decided}",
                             '106px',
                             '115px'
+                        ],
+                        [
+                            "eid176",
+                            "scaleX",
+                            16667,
+                            0,
+                            "easeInQuart",
+                            "${wearable2}",
+                            '0.75',
+                            '0.75'
                         ],
                         [
                             "eid151",
@@ -388,7 +418,7 @@
                             "easeInQuart",
                             "${wearable2}",
                             '-149px',
-                            '-31px'
+                            '4px'
                         ],
                         [
                             "eid17",
