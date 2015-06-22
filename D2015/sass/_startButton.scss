@@ -21,6 +21,9 @@
 	position: relative;
 	background-color: $color;
 	@include dropshadow;
+	padding: {
+		left: $snsH;
+	}
 	//margin-left: 50px;
 	color: #fff;
 	&:hover{
@@ -128,22 +131,17 @@ $wider:250px;
 .twitter_color{
 	//display: inline-block;
 	$twitter_blue:#55acee;
-	padding: {
-		left: $snsH;
-	}
 	@include snsbasic($twitter_blue,"../img/sns/TwitterLogo_white.png");
 }
 .facebook_color{
 	$facebook_blue:#3b5998;
-	padding: {
-		left: $snsH;
-	}
 	@include snsbasic($facebook_blue,"../img/sns/facebook.png");
+}
+.line_color{
+	$line_green:#00c300;
+	@include snsbasic($line_green,"../img/sns/line.png");
 }
 .team_link{
 	$tsukalab_color:#00a1e9;
-	padding: {
-		left: $snsH;
-	}
 	@include snsbasic($tsukalab_color,"../img/sns/simplelogo.png");
 }
