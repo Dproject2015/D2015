@@ -1,10 +1,10 @@
 
 {
 
-	"mediagroup_media/mario.mp3":"mario",
-	"expanded:images/wearable2.png":"nil",
+	"expanded:images/life.png":"nil",
+	"mediagroup_media/tokyokansei_arranged.mp3":"tokyokansei_arranged",
 	"pref__general__AutoKeyframeProperties":"true",
-	"expanded:images/media.png":"nil",
+	"pref__general__FilterNonAnimatedElements":"false",
 	"ModelData":"{\
 \"stage\": {\
    \"timelines\": {\
@@ -21,18 +21,18 @@
    }}\
 }",
 	"expanded:images/old-pape_L.png":"nil",
-	"expanded:images/recognition.png":"nil",
-	"mediagroup_media/booo.mp3":"booo",
-	"stage-Default Timeline_playhead_ms":"17767",
-	"mediagroup_media/tokyokansei_arranged.mp3":"tokyokansei_arranged",
+	"mediagroup_media/soccer_kansei.mp3":"soccer_kansei",
+	"stage-Default Timeline_playhead_ms":"18421",
+	"pixelsPerMs":"0.096403216697852",
 	"usedBOM":"false",
+	"CompZoomFactor":"100",
 	"expanded:images/mo15.png":"nil",
-	"pref__general__FilterNonAnimatedElements":"false",
-	"viewStartY":"0",
-	"mediagroup_media/doraemon.mp3":"doraemon",
-	"viewStartMs":"12930.218794611",
-	"pref__general__AutoKeyframePropertiesArmed":"true",
-	"expanded:images/wearable.png":"nil",
+	"mediagroup_media/booo.mp3":"booo",
+	"StageZoomFactor":"50",
+	"expanded:images/recognition.png":"nil",
+	"viewStartMs":"11888.608398438",
+	"pref__general__AutoKeyframePropertiesArmed":"false",
+	"expanded:images/ihci.png":"nil",
 	"symbol_stage":{
 		"element_${ihci}":{
 			"timelineColor2":"0x326a96",
@@ -47,19 +47,23 @@
 			"animationEnabled":"true",
 			"invisible":"false"},
 		"dummyStageParentHeight":"594px",
-		"element_${yourTeam}":{
-			"timelineColor2":"0xd8b467",
-			"timelineColor3":"0x81714f",
-			"timelineColor":"0xffd46d",
+		"element_${your_team_is}":{
+			"timelineColor2":"0x326a96",
 			"animationEnabled":"true",
-			"invisible":"false"},
-		"dummyStageParentWidth":"800px",
+			"timelineColor3":"0x385063",
+			"timelineColor":"0x2f73ad"},
+		"element_${wearableteam}":{
+			"timelineColor2":"0xb099ce",
+			"timelineColor3":"0x70657c",
+			"timelineColor":"0xceaef4",
+			"animationEnabled":"false",
+			"usingMotionPaths":"true"},
 		"element_${old-pape_L}":{
 			"timelineColor2":"0x4fa275",
 			"invisible":"false",
 			"timelineColor":"0x50bd82",
 			"animationEnabled":"false",
-			"usingMotionPaths":"true",
+			"usingMotionPaths":"false",
 			"timelineColor3":"0x456a55"},
 		"element_${wearableteamCopy2}":{
 			"timelineColor2":"0xba5b89",
@@ -73,29 +77,25 @@
 			"timelineColor":"0x91c767",
 			"animationEnabled":"true",
 			"timelineColor3":"0x5b6c4d"},
-		"element_${wearableteam}":{
-			"timelineColor2":"0xb099ce",
-			"timelineColor3":"0x70657c",
-			"timelineColor":"0xceaef4",
-			"animationEnabled":"false",
-			"usingMotionPaths":"true"},
 		"vGuides":"406px",
-		"element_${your_team_is}":{
-			"timelineColor2":"0x326a96",
+		"element_${yourTeam}":{
+			"timelineColor2":"0xd8b467",
+			"timelineColor3":"0x81714f",
+			"timelineColor":"0xffd46d",
 			"animationEnabled":"true",
-			"timelineColor3":"0x385063",
-			"timelineColor":"0x2f73ad"},
-		"element_${lifeteam}":{
-			"timelineColor2":"0xd35d6e",
-			"timelineColor3":"0x7e4b52",
-			"timelineColor":"0xfb657a",
-			"animationEnabled":"false",
-			"usingMotionPaths":"true"},
+			"invisible":"false"},
 		"element_${Right}":{
 			"timelineColor2":"0xcbbd71",
 			"timelineColor3":"0x7b7652",
 			"animationEnabled":"true",
 			"timelineColor":"0xeedf79"},
+		"element_${mo15}":{
+			"timelineColor2":"0x81aa62",
+			"invisible":"false",
+			"timelineColor":"0x91c767",
+			"animationEnabled":"false",
+			"timelineColor3":"0x5b6c4d"},
+		"dummyStageParentWidth":"800px",
 		"element_${wearable2}":{
 			"timelineColor2":"0x1095d2",
 			"timelineColor3":"0x29647e",
@@ -137,27 +137,27 @@
 			"timelineColor":"0xeedf79"},
 		"defaultStageParentWidth":"800px",
 		"hGuides":"301px",
-		"element_${mo15}":{
-			"timelineColor2":"0x81aa62",
-			"invisible":"false",
-			"timelineColor":"0x91c767",
+		"element_${lifeteam}":{
+			"timelineColor2":"0xd35d6e",
+			"timelineColor3":"0x7e4b52",
+			"timelineColor":"0xfb657a",
 			"animationEnabled":"false",
-			"timelineColor3":"0x5b6c4d"},
+			"usingMotionPaths":"true"},
 		"element_${kameteam}":{
 			"timelineColor2":"0x5a558a",
 			"timelineColor3":"0x4a485e",
 			"timelineColor":"0x63599f",
 			"animationEnabled":"false",
 			"usingMotionPaths":"true"}},
-	"TransitionIdCounter":"176",
-	"CompZoomFactor":"100",
-	"StageZoomFactor":"50",
-	"pixelsPerMs":"0.096403216697852",
-	"expanded:images/ihci.png":"nil",
-	"HTMLFileName":"OutputTest.html",
+	"TransitionIdCounter":"185",
+	"expanded:images/wearable2.png":"nil",
+	"viewStartY":"0",
+	"mediagroup_media/doraemon.mp3":"doraemon",
+	"expanded:images/wearable.png":"nil",
+	"expanded:images/media.png":"nil",
 	"stage-Default Timeline_mark_ms":"-1",
 	"nextElementColorIndex":"8",
 	"pref__general__GenerateSmoothTransitions":"true",
 	"mediagroup_media/wa_o.mp3":"wa_o",
-	"expanded:images/life.png":"nil",
-	"mediagroup_media/soccer_kansei.mp3":"soccer_kansei"}
+	"mediagroup_media/mario.mp3":"mario",
+	"HTMLFileName":"OutputTest.html"}
