@@ -132,11 +132,11 @@ body {
         //}
         &:before{
           position: absolute;
-          content: "🔴";
+          content: "●";
           //padding: {
           //  left: -1em;
           //}
-          left: -1em;
+          left: -1.5em;
         }
       }
     }
