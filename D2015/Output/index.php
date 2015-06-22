@@ -162,7 +162,7 @@
     			res_img[2] = "media.png";
     			res_img[3] = "wearable.png";
     			res_img[4] = "media.png";
-    			res_img[5] = "recognition.png";
+    			res_img[5] = "awareness.png";
     			res_img[6] = "wearable.png";
     			
 			var sfileName = new Array();
@@ -213,7 +213,6 @@
     	<script type="text/javascript" charset="utf-8" src="./OutputTest_edge.js"></script>
     	
     	<!--リンク生成系-->
-<<<<<<< HEAD
 	<script>
 	window.onload=function(){
 			var teamName = TeamName[6];
@@ -230,24 +229,6 @@
 			document.getElementById("lineLink").href='http://line.me/R/msg/text/?'+encodeURIComponent(linktext);
 		}
 	</script>
-=======
-		<script>
-			window.onload=function(){
-				var linktext = 'あなたのチームは'+TeamName[Team.Num]+'チームに決まりました。-神戸大学塚本・寺田研究室-';
-				var pagelink = 'http://cse.eedept.kobe-u.ac.jp/ito/D2015/inputTest/';
-				//本番のリンクは下
-				//var pagelink = 'http://cse.eedept.kobe-u.ac.jp/isd2015/D2015/';
-				//チームリンク生成
-				document.getElementById("teamLink").href='http://cse.eedept.kobe-u.ac.jp/portfolio/'+'life/';
-				//twitterリンク生成
-				document.getElementById("twitterLink").href='https://twitter.com/intent/tweet?hashtags=S2SortingHat&text='+encodeURIComponent(linktext)+'&url='+pagelink;
-				//facebookリンク生成
-				document.getElementById("facebookLink").href='https://www.facebook.com/sharer/sharer.php?u='+pagelink;
-				//Lineリンク生成
-				document.getElementById("lineLink").href='http://line.me/R/msg/text/?'+encodeURIComponent(linktext) + ' '+ pagelink;
-			}
-		</script>
->>>>>>> fb0ecc43a8cb806974349a45d66d242c352cd9f1
     
    
     
