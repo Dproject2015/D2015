@@ -151,14 +151,14 @@
     			txt[4] = "環境メディアチーム！！";
     			txt[5] = "認識チーム！！";
     			txt[6] = "ウェアラブルチーム！！";
-    		var img = new Array();
-    			img[0] = "life.png";
-    			img[1] = "ihci.png";
-    			img[2] = "media.png";
-    			img[3] = "wearable.png";
-    			img[4] = "media.png";
-    			img[5] = "recognition.png";
-    			img[6] = "wearable.png";
+    		var res_img = new Array();
+    			res_img[0] = "life.png";
+    			res_img[1] = "ihci.png";
+    			res_img[2] = "media.png";
+    			res_img[3] = "wearable.png";
+    			res_img[4] = "media.png";
+    			res_img[5] = "recognition.png";
+    			res_img[6] = "wearable.png";
     			
 			var sfileName = new Array();
 				sfileName[0] = "tokyokansei_arranged.mp3";
@@ -193,7 +193,18 @@
 <body>
 <div id = "contents">
 	<div id = "main">
-		<div id="Stage" class="EDGE-116503079">	
+		<div id="Stage" class="EDGE-116503079">
+		</div>
+		<div id="links">
+			<div class="widerLink">
+				<a href="#" class="normal_button team_link">このチームについて</a>
+			</div>
+			<ul id="snsLinks">
+				<li><a href="#" class="normal_button twitter_color">ツイート</a></li>
+				<li><a href="#" class="normal_button facebook_color">シェア</a></li>
+				<li><a href="#" class="normal_button line_color">LINEに投稿</a></li>
+				<!--<li><a href="#" class="normal_button team_link">このチームについて</a></li>-->
+			</ul>
 		</div>
 	</div>
 	<div id = "footer">

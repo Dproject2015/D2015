@@ -97,7 +97,7 @@
                             id: 'yourTeam',
                             type: 'text',
                             rect: ['6px', '340px', '800px', '75px', 'auto', 'auto'],
-                            text: txt[Team.Num],
+                            text: "◯○チーム！！",
                             align: "center",
                             font: ['\'ヒラギノ角ゴ Pro W3\', \'Hiragino Kaku Gothic Pro\', メイリオ, Meiryo, ＭＳＰゴシック, \'MS PGothic\', sans-serif', [50, "px"], "rgba(0,0,0,1)", "400", "none solid rgb(0, 0, 0)", "normal", "break-word", ""],
                             filter: [0, 0, 1, 1, 0, 0, 0, 300, "rgba(0,0,0,0)", 0, 0, 0]
@@ -106,7 +106,7 @@
                             id: 'wearable2',
                             type: 'image',
                             rect: ['216px', '-31px', '380px', '409px', 'auto', 'auto'],
-                            fill: ["rgba(0,0,0,0)",im+img[Team.Num],'0px','0px'],
+                            fill: ["rgba(0,0,0,0)","wearable2.png",'0px','0px'],
                             filter: [0, 0, 1, 1, 0, 0, 0, 300, "rgba(0,0,0,0)", 0, 0, 0],
                             transform: [[],[],[],['0.8','0.8']]
                         },
