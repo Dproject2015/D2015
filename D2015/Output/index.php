@@ -3,6 +3,8 @@
 	require_once('CalcFunction.php');
 		//$mid = $_POST['mid'];
 		//コメント追加いずた
+		//"○◯チーム！！"
+		//"wearable.png"
 		
 		/*$Answers = array(
 			"q1" => $_POST['q1'],
@@ -149,6 +151,15 @@
     			txt[4] = "環境メディアチーム！！";
     			txt[5] = "認識チーム！！";
     			txt[6] = "ウェアラブルチーム！！";
+    		var img = new Array();
+    			img[0] = "life.png";
+    			img[1] = "ihci.png";
+    			img[2] = "media.png";
+    			img[3] = "wearable.png";
+    			img[4] = "media.png";
+    			img[5] = "recognition.png";
+    			img[6] = "wearable.png";
+    			
 			var sfileName = new Array();
 				sfileName[0] = "tokyokansei_arranged.mp3";
 				sfileName[1] = "doraemon.mp3";
