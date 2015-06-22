@@ -5,7 +5,7 @@ $(function(){
 	var All = ["a-sounan","eee","illusion","sasuga","seki","sindoiwa","soredeka",
 	"sugoiyo","uwa-sugoina","wakaran","warai1","warai2","ahahasoredeka","akanwa","aso",
 	"asonan","asugoina","dream","eee2","iine_nakanaka","takaine","a_majide","a_sounanya",
-	"barabarayana","funfun","hahahaha","ha-i","hai_iide-su","haihai","haihai2","haihai3",
+	"barabara_yana","funfun","hahahaha","ha-i","hai_iide-su","haihai","haihai2","haihai3",
 	"haihai4","he-","naruhodo","naruhodo2","naruhodo3","nn_iiii","so-yana-","so-yana-2",
 	"tyotto_hanpa_janai"];
 	//寺田先生ボイスファイル
