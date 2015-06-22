@@ -28,12 +28,6 @@
                 content: {
                     dom: [
                         {
-                            id: 'old-pape_L',
-                            type: 'image',
-                            rect: ['0', '0', '798px', '600px', 'auto', 'auto'],
-                            fill: ["rgba(0,0,0,0)",im+"old-pape_L.png",'0px','0px']
-                        },
-                        {
                             id: 'Right',
                             type: 'text',
                             rect: ['106px', '116', 'auto', 'auto', 'auto', 'auto'],
@@ -116,16 +110,6 @@
                             transform: [[],[],[],['0.75','0.75']]
                         },
                         {
-                            id: 'tokyokansei_arranged',
-                            display: 'none',
-                            volume: '1',
-                            type: 'audio',
-                            tag: 'audio',
-                            rect: ['526', '169', '320px', '45px', 'auto', 'auto'],
-                            source: [aud+"tokyokansei_arranged.mp3"],
-                            preload: 'auto'
-                        },
-                        {
                             id: 'RoundRect',
                             type: 'rect',
                             rect: ['142px', '216px', '530px', '148px', 'auto', 'auto'],
@@ -142,6 +126,16 @@
                             align: "center",
                             font: ['\'ヒラギノ角ゴ Pro W3\', \'Hiragino Kaku Gothic Pro\', メイリオ, Meiryo, ＭＳＰゴシック, \'MS PGothic\', sans-serif', [50, "px"], "rgba(0,0,0,1)", "400", "none solid rgb(0, 0, 0)", "normal", "break-word", ""],
                             filter: [0, 0, 1, 1, 0, 0, 0, 300, "rgba(0,0,0,0)", 0, 0, 0]
+                        },
+                        {
+                            id: 'tokyokansei_arranged',
+                            display: 'none',
+                            volume: '1',
+                            type: 'audio',
+                            tag: 'audio',
+                            rect: ['526', '169', '320px', '45px', 'auto', 'auto'],
+                            source: [aud+"tokyokansei_arranged.mp3"],
+                            preload: 'auto'
                         }
                     ],
                     style: {
@@ -154,7 +148,7 @@
                     }
                 },
                 timeline: {
-                    duration: 23000,
+                    duration: 23250,
                     autoPlay: true,
                     data: [
                         [
@@ -198,14 +192,14 @@
                             '148px'
                         ],
                         [
-                            "eid193",
-                            "top",
+                            "eid83",
+                            "filter.blur",
                             16667,
                             1750,
                             "easeInQuart",
-                            "${wearable2Copy}",
-                            '-149px',
-                            '7px'
+                            "${yourTeam}",
+                            '300px',
+                            '0px'
                         ],
                         [
                             "eid25",
@@ -317,23 +311,44 @@
                             '0.75'
                         ],
                         [
-                            "eid105",
-                            "location",
-                            4669,
-                            5489,
-                            "easeInBack",
-                            "${recognition}",
-                            [[133.01, 457.9, 0, 0, 0, 0,0],[667, 152, 0, 0, 0, 0,615.4]]
+                            "eid211",
+                            "opacity",
+                            17556,
+                            861,
+                            "easeInQuart",
+                            "${RoundRect}",
+                            '0',
+                            '0.6489138603210449'
                         ],
                         [
-                            "eid185",
-                            "width",
-                            18421,
-                            0,
+                            "eid101",
+                            "filter.blur",
+                            6802,
+                            2270,
                             "easeInQuart",
-                            "${yourTeam}",
-                            '567px',
-                            '567px'
+                            "${recognition}",
+                            '300px',
+                            '0px'
+                        ],
+                        [
+                            "eid103",
+                            "filter.blur",
+                            9072,
+                            531,
+                            "easeInQuart",
+                            "${recognition}",
+                            '0.000000px',
+                            '0px'
+                        ],
+                        [
+                            "eid104",
+                            "filter.blur",
+                            9603,
+                            555,
+                            "easeInQuart",
+                            "${recognition}",
+                            '0px',
+                            '300px'
                         ],
                         [
                             "eid150",
@@ -356,7 +371,7 @@
                         [
                             "eid92",
                             "volume",
-                            20250,
+                            20500,
                             2580,
                             "linear",
                             "${tokyokansei_arranged}",
@@ -434,32 +449,32 @@
                             '115px'
                         ],
                         [
-                            "eid211",
-                            "opacity",
-                            17556,
-                            861,
-                            "easeInQuart",
-                            "${RoundRect}",
-                            '0',
-                            '0.6489138603210449'
+                            "eid20",
+                            "left",
+                            613,
+                            1637,
+                            "linear",
+                            "${Right}",
+                            '106px',
+                            '115px'
                         ],
                         [
-                            "eid147",
+                            "eid151",
                             "filter.blur",
-                            8662,
+                            10250,
                             4579,
                             "easeInQuart",
-                            "${life}",
+                            "${ihci}",
                             '300px',
                             '0px'
                         ],
                         [
-                            "eid164",
+                            "eid167",
                             "filter.blur",
-                            13766,
-                            561,
-                            "easeInQuint",
-                            "${life}",
+                            15415,
+                            500,
+                            "easeInQuart",
+                            "${ihci}",
                             '0px',
                             '300px'
                         ],
@@ -484,44 +499,23 @@
                             '300px'
                         ],
                         [
-                            "eid101",
-                            "filter.blur",
-                            6802,
-                            2270,
-                            "easeInQuart",
+                            "eid105",
+                            "location",
+                            4669,
+                            5489,
+                            "easeInBack",
                             "${recognition}",
-                            '300px',
-                            '0px'
+                            [[133.01, 457.9, 0, 0, 0, 0,0],[667, 152, 0, 0, 0, 0,615.4]]
                         ],
                         [
-                            "eid103",
-                            "filter.blur",
-                            9072,
-                            531,
-                            "easeInQuart",
-                            "${recognition}",
-                            '0.000000px',
-                            '0px'
-                        ],
-                        [
-                            "eid104",
-                            "filter.blur",
-                            9603,
-                            555,
-                            "easeInQuart",
-                            "${recognition}",
-                            '0px',
-                            '300px'
-                        ],
-                        [
-                            "eid83",
-                            "filter.blur",
-                            16667,
-                            1750,
+                            "eid185",
+                            "width",
+                            18421,
+                            0,
                             "easeInQuart",
                             "${yourTeam}",
-                            '300px',
-                            '0px'
+                            '567px',
+                            '567px'
                         ],
                         [
                             "eid198",
@@ -534,34 +528,34 @@
                             '23px'
                         ],
                         [
-                            "eid20",
-                            "left",
-                            613,
-                            1637,
-                            "linear",
-                            "${Right}",
-                            '106px',
-                            '115px'
+                            "eid193",
+                            "top",
+                            16667,
+                            1750,
+                            "easeInQuart",
+                            "${wearable2Copy}",
+                            '-149px',
+                            '7px'
                         ],
                         [
                             "eid175",
                             "top",
                             16667,
-                            1750,
+                            889,
                             "easeInQuart",
                             "${wearable2}",
                             '-149px',
-                            '5px'
+                            '-212px'
                         ],
                         [
-                            "eid196",
-                            "filter.blur",
-                            16667,
-                            1750,
+                            "eid212",
+                            "top",
+                            17556,
+                            861,
                             "easeInQuart",
-                            "${wearable2Copy}",
-                            '300px',
-                            '0px'
+                            "${wearable2}",
+                            '-212px',
+                            '5px'
                         ],
                         [
                             "eid194",
@@ -574,22 +568,32 @@
                             '0.75'
                         ],
                         [
-                            "eid151",
+                            "eid196",
                             "filter.blur",
-                            10250,
-                            4579,
+                            16667,
+                            1750,
                             "easeInQuart",
-                            "${ihci}",
+                            "${wearable2Copy}",
                             '300px',
                             '0px'
                         ],
                         [
-                            "eid167",
+                            "eid147",
                             "filter.blur",
-                            15415,
-                            500,
+                            8662,
+                            4579,
                             "easeInQuart",
-                            "${ihci}",
+                            "${life}",
+                            '300px',
+                            '0px'
+                        ],
+                        [
+                            "eid164",
+                            "filter.blur",
+                            13766,
+                            561,
+                            "easeInQuint",
+                            "${life}",
                             '0px',
                             '300px'
                         ],
@@ -602,8 +606,8 @@
                             "${media}",
                             [[673, 458.01, 0, 0, 0, 0,0],[91.22, 83.01, 0, 0, 0, 0,692.17]]
                         ],
-                            [ "eid93", "trigger", 18500, function executeMediaFunction(e, data) { this._executeMediaAction(e, data); }, ['play', '${tokyokansei_arranged}', [] ] ],
-                            [ "eid94", "trigger", 23000, function executeMediaFunction(e, data) { this._executeMediaAction(e, data); }, ['pause', '${tokyokansei_arranged}', [] ] ]
+                            [ "eid93", "trigger", 18750, function executeMediaFunction(e, data) { this._executeMediaAction(e, data); }, ['play', '${tokyokansei_arranged}', [] ] ],
+                            [ "eid94", "trigger", 23250, function executeMediaFunction(e, data) { this._executeMediaAction(e, data); }, ['pause', '${tokyokansei_arranged}', [] ] ]
                     ]
                 }
             }

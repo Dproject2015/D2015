@@ -138,6 +138,10 @@
 		<script type= "text/javascript" src = "../lib/footerFixed.js"></script>
 		<script src="../lib/jquery.fademover.js"></script>
 		<script src = "../lib/modernizr.custom.js"></script>
+		<!--フェードイン-->
+		<script src="../lib/fade.js"></script>
+		<!--ボタンを隠す-->
+		<script src="lib/checkAnime.js"></script>
 	
 		<!--Adobe Edge Runtime-->
 		<!--チーム決定-->
@@ -146,11 +150,12 @@
 			var txt = new Array();
     			txt[0] = "ライフチーム！！";
     			txt[1] = "IHCIチーム！！";
-    			txt[2] = "土田よりの環境メディアチーム！！";
-    			txt[3] = "渡邊よりのウェアラブルチーム！！";
-    			txt[4] = "菅家よりの環境メディアチーム！！";
+    			txt[2] = "ダンサーよりの<br>環境メディアチーム！！";
+    			txt[3] = "超音波erよりの<br>ウェアラブルチーム！！";
+    			txt[4] = "ドラマーよりの<br>環境メディアチーム！！";
     			txt[5] = "認識チーム！！";
-    			txt[6] = "双見よりのウェアラブルチーム！！";
+    			txt[6] = "セルフカッターよりの<br>ウェアラブルチーム！";
+    			
     		var res_img = new Array();
     			res_img[0] = "life.png";
     			res_img[1] = "ihci.png";
@@ -171,11 +176,11 @@
 				
 				TeamName[0] = 'ライフ';
 				TeamName[1] = 'IHCI';
-				TeamName[2] = '土田よりの環境メディア';
-				TeamName[3] = '渡邊よりのウェアラブル';
-				TeamName[4] = '菅家よりの環境メディア';
+				TeamName[2] = 'ダンサーよりの環境メディア';
+				TeamName[3] = '超音波erよりのウェアラブル';
+				TeamName[4] = 'ドラマーよりの環境メディア';
 				TeamName[5] = '認識';
-				TeamName[6] = '双見よりのウェアラブル';
+				TeamName[6] = 'セルフカッターよりのウェアラブル';
 				TeamNameEng[0] = 'life/';
 				TeamNameEng[1] = 'ihci/';
 				TeamNameEng[2] = 'media/';
@@ -206,21 +211,24 @@
     	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
     	<script type="text/javascript" charset="utf-8" src="edge_includes/edge.5.0.1.min.js"></script>
     	<script type="text/javascript" charset="utf-8" src="./OutputTest_edge.js"></script>
+    	
     	<!--リンク生成系-->
-		<script>
-			window.onload=function(){
-				var linktext = 'あなたのチームは'+TeamName[Team.Num]+'チームに決まりました。-神戸大学塚本・寺田研究室-';
-				var pagelink = 'http://cse.eedept.kobe-u.ac.jp/ito/D2015/inputTest/';
-				//チームリンク生成
-				document.getElementById("teamLink").href='http://cse.eedept.kobe-u.ac.jp/portfolio/'+'life/';
-				//twitterリンク生成
-				document.getElementById("twitterLink").href='https://twitter.com/intent/tweet?hashtags=S2SortingHat&text='+encodeURIComponent(linktext)+'&url='+pagelink;
-				//facebookリンク生成
-				document.getElementById("facebookLink").href='https://www.facebook.com/sharer/sharer.php?u='+pagelink;
-				//Lineリンク生成
-				document.getElementById("lineLink").href='http://line.me/R/msg/text/?'+encodeURIComponent(linktext);
-			}
-		</script>
+	<script>
+	window.onload=function(){
+			var teamName = TeamName[6];
+			var teamNameEng = TeamNameEng[6];
+			var linktext = 'あなたのチームは'+TeamName+'チームに決まりました。-神戸大学塚本・寺田研究室-';
+			var pagelink = 'http://cse.eedept.kobe-u.ac.jp/ito/D2015/inputTest/';
+			//チームリンク生成
+			document.getElementById("teamLink").href='http://cse.eedept.kobe-u.ac.jp/portfolio/'+teamNameEng;
+			//twitterリンク生成
+			document.getElementById("twitterLink").href='https://twitter.com/intent/tweet?hashtags=S2SortingHat&text='+encodeURIComponent(linktext)+'&url='+pagelink;
+			//facebookリンク生成
+			document.getElementById("facebookLink").href='https://www.facebook.com/sharer/sharer.php?u='+pagelink;
+			//Lineリンク生成
+			document.getElementById("lineLink").href='http://line.me/R/msg/text/?'+encodeURIComponent(linktext);
+		}
+	</script>
     
    
     
@@ -238,7 +246,7 @@
 			}, {dom: [ ]}, {dom: [ ]});
 		</script>
 	
-		<!--Adobe Edge Runtime End-->	
+		<!--Adobe Edge Runtime End-->
 	</head>
 
 <body>
@@ -248,12 +256,15 @@
 		</div>
 		<div id="links">
 			<div class="widerLink">
-				<a href="#" class="normal_button team_link">このチームについて</a>
+				<!--リンク先を動的に変更-->
+				<a id = "teamLink" href="#" class="normal_button team_link" target="_blank">このチームについて</a>
 			</div>
 			<ul id="snsLinks">
-				<li><a href="#" class="normal_button twitter_color">ツイート</a></li>
-				<li><a href="#" class="normal_button facebook_color">シェア</a></li>
-				<li><a href="#" class="normal_button line_color">LINEに投稿</a></li>
+				<!--リンク先を動的に変更-->
+				<!--中身は上のjsで自動的に変更してくれるので上のjsを参照されたし-->
+				<li><a id = "twitterLink" href="#" class="normal_button twitter_color" onclick="window.open(this.href,'','width=650,height=450,menubar=no,toolbar=no,scrollbars=yes');return false;">ツイートする</a></li>
+				<li><a id="facebookLink" href="#" class="normal_button facebook_color" onclick="window.open(this.href,'','width=650,height=450,menubar=no,toolbar=no,scrollbars=yes');return false;">シェアする</a></li>
+				<li><a id = "lineLink" href="#" class="normal_button line_color" target="_blank">LINEで送る</a></li>
 				<!--<li><a href="#" class="normal_button team_link">このチームについて</a></li>-->
 			</ul>
 		</div>
