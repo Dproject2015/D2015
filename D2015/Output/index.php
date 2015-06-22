@@ -166,24 +166,23 @@
 				sfileName[2] = "soccer_kansei.mp3";
 				sfileName[3] = "wa_o.mp3";	
 				
-			var Link = {TeamName: Eng:};
-				Link.TeamName = new Array();
-				Link.Eng = new Array();	
+			var TeamName = new Array();
+			var TeamNameEng = new Array();	
 				
-				Link.teamName[0] = 'ライフ';
-				Link.teamName[1] = 'IHCI';
-				Link.teamName[2] = '土田よりの環境メディア';
-				Link.teamName[3] = '渡邊よりのウェアラブル';
-				Link.teamName[4] = '菅家よりの環境メディア';
-				Link.teamName[5] = '認識';
-				Link.teamName[6] = '双見よりのウェアラブル';
-				Link.Eng[0] = 'life/';
-				Link.Eng[1] = 'ihci/';
-				Link.Eng[2] = 'media/';
-				Link.Eng[3] = 'wearable/';
-				Link.Eng[4] = 'media/';
-				Link.Eng[5] = 'awareness/';
-				Link.Eng[6] = 'wearable/';
+				TeamName[0] = 'ライフ';
+				TeamName[1] = 'IHCI';
+				TeamName[2] = '土田よりの環境メディア';
+				TeamName[3] = '渡邊よりのウェアラブル';
+				TeamName[4] = '菅家よりの環境メディア';
+				TeamName[5] = '認識';
+				TeamName[6] = '双見よりのウェアラブル';
+				TeamNameEng[0] = 'life/';
+				TeamNameEng[1] = 'ihci/';
+				TeamNameEng[2] = 'media/';
+				TeamNameEng[3] = 'wearable/';
+				TeamNameEng[4] = 'media/';
+				TeamNameEng[5] = 'awareness/';
+				TeamNameEng[6] = 'wearable/';
 			/*
 			var link_teamName = new Array();
 				link_teamName[0] = 'ライフ';
@@ -210,12 +209,10 @@
     	<!--リンク生成系-->
 		<script>
 			window.onload=function(){
-				var teamName = 'ライフ';
-				var teamNameEng = 'life/';
-				var linktext = 'あなたのチームは'+Link.teamName[Team.Num]+'チームに決まりました。-神戸大学塚本・寺田研究室-';
+				var linktext = 'あなたのチームは'+TeamName[Team.Num]+'チームに決まりました。-神戸大学塚本・寺田研究室-';
 				var pagelink = 'http://cse.eedept.kobe-u.ac.jp/ito/D2015/inputTest/';
 				//チームリンク生成
-				document.getElementById("teamLink").href='http://cse.eedept.kobe-u.ac.jp/portfolio/'+Link.Eng[Team.Num];
+				document.getElementById("teamLink").href='http://cse.eedept.kobe-u.ac.jp/portfolio/'+'life/';
 				//twitterリンク生成
 				document.getElementById("twitterLink").href='https://twitter.com/intent/tweet?hashtags=S2SortingHat&text='+encodeURIComponent(linktext)+'&url='+pagelink;
 				//facebookリンク生成
