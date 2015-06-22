@@ -67,12 +67,35 @@ body #main #links {
 }
 #questions #about, #start #about {
   position: absolute;
-  width: 490px;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 100%;
   height: 380px;
   padding: 10px;
   margin-top: 5px;
   overflow-x: hidden;
   overflow-y: auto;
+}
+#questions #about ul, #start #about ul {
+  padding-left: 2em;
+}
+#questions #about ul li, #start #about ul li {
+  position: relative;
+}
+#questions #about ul li:before, #start #about ul li:before {
+  position: absolute;
+  content: "🔴";
+  left: -1em;
+}
+#questions #about a, #start #about a {
+  font-weight: normal;
+  color: blue;
+}
+#questions #about a:hover, #start #about a:hover {
+  color: blue;
+  font-weight: bold;
+}
+#questions #about a:visited, #start #about a:visited {
+  color: blue;
 }
 
 #start {
