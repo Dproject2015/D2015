@@ -1,5 +1,5 @@
 $(function(){
-	$('#questions,#start').fadeMover({
+	$('#questions').fadeMover({
 			'effectType':1,
 			'inSpeed':800,
 			'outSpeed':800,
