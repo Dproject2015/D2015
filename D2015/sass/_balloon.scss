@@ -1,3 +1,5 @@
+/*バルーン型のリンクのデザイン*/
+/*=================================================*/
 @mixin base_element($time:0.5s){
   -webkit-transition: $time;
      -moz-transition: $time;
@@ -21,7 +23,7 @@
   color:$koge;
   line-height: 50px;
   text-align: center;
-  border-radius: 50px;
+  border-radius: 10px;
   z-index: 0;
   text-decoration: none;
   font:{

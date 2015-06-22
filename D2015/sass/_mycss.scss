@@ -1,6 +1,7 @@
 $imgWidth:800px;
 $imgHeight:600px;
 $smallSkip:10px;
+$h:50px;
 $gray:rgba(0, 0, 0, 0.5);
 $alphaWhite:rgba(255,255,255,0.6);
 $clearColor:rgba(0,0,0,0);
@@ -15,6 +16,8 @@ $titleFont:'Cinzel Decorative', cursive,'游明朝', YuMincho, 'ヒラギノ明�
     border-radius:$radius;
     padding:$vertical $horizontal;
 }
+/*基本デザイン*/
+/*=================================================*/
 html {
   height: 100%;
 }
@@ -49,6 +52,7 @@ body {
     }
   }
   #main{
+  	position: relative;
     padding-top: 40px;
     padding-bottom: 30px;
     width: $imgWidth;
@@ -66,12 +70,20 @@ body {
     	left:$smallSkip;
     	right: $smallSkip;
     }
-    position: relative;
+    /*最終ページのリンクボタン用*/
+    #links{
+    	position: absolute;
+    	top:$imgHeight - $h - 120px;
+    	right: 0;
+    	bottom: 0;
+    	left: 50px;
+    }
   }
 }
 
-#questions {
-  width: 700px;
+#questions,#start {
+  position: relative;
+  width: $imgWidth - 100px;
   margin: {
   	right: auto;
   	left:auto;
@@ -83,20 +95,65 @@ body {
   }
   /*display: none;*/
   #submit{
+  	//position: absolute;
   	margin: {
   		top:2*$smallSkip;
   	}
   }
+  .normalLink{
+    //display: inline-block;
+    position: absolute;
+    top:$imgHeight - $h - 120px;
+  }
+  #about{
+    position:absolute;
+    width: 490px;
+    height: 380px;
+    padding: 10px;
+    margin: {
+    	top:5px;
+    }
+    overflow: {
+      x:hidden;
+      y:auto;
+    }
+  }
   /*font-family: $mainFont;*/
 }
-
+#start{
+  height: $imgHeight - 100px;
+  //width: 200px;
+  //display: table;
+  position: relative;
+  //text-align: center;
+  #startButton{
+    position: absolute;
+    width:150px;
+    height:4em;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin: auto;
+    display: table;
+    span{
+      //position: absolute;
+      //width:200px;
+      //height: 50px;
+      padding: 0;
+      text-align: center;
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+}
 #footer {
   color: white;
   text-align: center;
   /*font-family: 'Cinzel Decorative', cursive;*/
 }
 
-h1 {
+h1,h2 {
 	font: {
 		family:$titleFont;
 	}
@@ -108,14 +165,19 @@ h1 {
   	bottom: 0px;
   }
 }
+h2{
+	margin:{
+		top:0px;
+	}
+}
 hr.grad{
 	margin:0;
 	border: 0;
     height: 1px;
-    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0.9), rgba(0,0,0,0.5), rgba(0,0,0,0));
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0.9), rgba(0,0,0,0.5), rgba(0,0,0,0));
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0.9), rgba(0,0,0,0.5), rgba(0,0,0,0));
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0.9), rgba(0,0,0,0.5), rgba(0,0,0,0));
 }
 form {
 	margin: {

@@ -30,7 +30,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700' rel='stylesheet' type='text/css'>
 	
 	<!--スクリプト-->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script type= "text/javascript" src = "lib/footerFixed.js"></script>
 	<script src="lib/jquery.fademover.js"></script>
 	<!--<script src = "lib/jquery.animsition.min.js"></script>
@@ -50,7 +50,7 @@
 		<div id = "questions">
 			<h1>Answer Questions</h1>
 			<hr class="grad">
-			<p class = "intro">以下の質問に5段階で回答するのだ．<br>
+			<p class = "intro">以下の質問に5段階で回答するのだ。<br>
 			（<span class="round">1</span> : あてはまらない---<span class="round">3</span> : どちらでもない---<span class="round">5</span> : あてはまる）</p>
 			<!--<p>Answer questions</p>-->
 			<form action = "question04.php" method="post" name = "basicInfo" class = "ac-custom ac-radio ac-checkmark">
@@ -105,7 +105,7 @@
 			<div id="submit">
 				<!--リンクでpostする-->
 				<!--音声も付与-->
-				<a href="javascript:basicInfo.submit()" class="button">なるほど，あともう少しだ．</a>
+				<a href="javascript:basicInfo.submit()" class="button">なるほど、あともう少しだ。</a>
 			</div>
 		</div>
 	</div>

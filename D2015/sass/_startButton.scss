@@ -1,0 +1,157 @@
+@mixin base_button($time:0.5s){
+	-webkit-transition:all $time ease;
+	transition:all $time ease;
+}
+@mixin opacity_ctrl($o:80){
+	filter:alpha(opacity=$o);
+	-ms-filter:'alpha(opacity=#{$o})';
+	-moz-opacity:$o/100;
+	-khtml-opacity:$o/100;
+	opacity:$o/100;
+}
+@mixin dropshadow{
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+}
+@mixin noneshadow{
+	box-shadow: none;
+}
+@mixin snsbasic($color:#55acee,$path:"../img/sns/TwitterLogo_white.png"){
+	text-decoration: none;
+	border-radius: 10px;
+	position: relative;
+	background-color: $color;
+	@include dropshadow;
+	padding: {
+		left: $snsH;
+	}
+	//margin-left: 50px;
+	color: #fff;
+	&:hover{
+		//background-color: $twitter_black;
+		//color: $twitter_black;
+		@include noneshadow;
+		//border: 1px solid $twitter_black;
+		&:before{
+			@include noneshadow;
+		}
+	}
+	&:before{
+		position:absolute;
+		background: {
+			image:url($path);
+		}
+		border-radius: 10px 0px 0px 10px;
+		content: '';
+		width: $snsH;
+		height: $snsH;
+		background-color: $color;
+		z-index: 1;
+		top: 0;
+		left: 0px;
+		//@include dropshadow;
+	}
+}
+$snsW:150px;
+$snsH:50px;
+$wider:250px;
+@mixin linkBase($w:$snsWidth){
+	height: $snsH;
+    width: $w;
+    display: table;
+    text-align: center;
+    //padding:{
+    //  left:50px;
+    //}
+    a{
+      display: table-cell;
+      vertical-align: middle;
+      text-decoration: none;
+      //@include dropshadow;
+      //height: 100%;
+      //padding: 0 15px;
+    }
+}
+/*リンクボタンのデザイン*/
+/*=================================================*/
+.normal_button{
+	//display: inline-block;
+	cursor: pointer;
+	@include base_button(0.3s);
+}/*その他ボタン*/
+/*=================================================*/
+.normalLink{
+	@include linkBase($snsW);
+}
+.widerLink{
+	@include linkBase($wider);
+}
+//.snsLink{
+//	//text-align: left;
+//	padding: {
+//		left: $snsH
+//	}
+//}
+ul{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+#snsLinks{
+	margin:{
+		top:5px;
+		bottom: 0px;
+		right: auto;
+		left: auto;
+	}
+	height: $snsH;
+	//padding: 10px;
+	li{
+		//position: relative;
+		display: inline-block;
+		width:$snsW;
+		height: $snsH;
+		//padding: 5px 10px;
+		text-align: center;
+		//vertical-align: middle;
+		a{
+			//position: absolute;
+			display: block;
+			width: $snsW;
+			height: $snsH;
+			line-height: $snsH;
+			//@include dropshadow;
+			//top: 0px;
+			//right: 0px;
+			//bottom: 0px;
+			//left: 0px;
+		}
+	}
+}
+/*====================================================*/
+/*色分け*/
+.normal_color{
+	border-radius: 10px;
+	background-color: $alphaWhite;
+	color: $koge;
+	&:hover{
+		background-color: $koge;
+		color: #fff;
+	}
+}
+.twitter_color{
+	//display: inline-block;
+	$twitter_blue:#55acee;
+	@include snsbasic($twitter_blue,"../img/sns/TwitterLogo_white.png");
+}
+.facebook_color{
+	$facebook_blue:#3b5998;
+	@include snsbasic($facebook_blue,"../img/sns/facebook.png");
+}
+.line_color{
+	$line_green:#00c300;
+	@include snsbasic($line_green,"../img/sns/line.png");
+}
+.team_link{
+	$tsukalab_color:#00a1e9;
+	@include snsbasic($tsukalab_color,"../img/sns/simplelogo.png");
+}

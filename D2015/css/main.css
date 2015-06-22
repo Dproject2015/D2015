@@ -1,3 +1,5 @@
+/*基本デザイン*/
+/*=================================================*/
 html {
   height: 100%;
 }
@@ -23,6 +25,7 @@ body > #contents {
   padding-left: 0px;
 }
 body #main {
+  position: relative;
   padding-top: 40px;
   padding-bottom: 30px;
   width: 800px;
@@ -34,10 +37,18 @@ body #main {
   margin-bottom: 0px;
   padding-left: 10px;
   padding-right: 10px;
-  position: relative;
+  /*最終ページのリンクボタン用*/
+}
+body #main #links {
+  position: absolute;
+  top: 430px;
+  right: 0;
+  bottom: 0;
+  left: 50px;
 }
 
-#questions {
+#questions, #start {
+  position: relative;
   width: 700px;
   margin-right: auto;
   margin-left: auto;
@@ -47,8 +58,43 @@ body #main {
   /*display: none;*/
   /*font-family: $mainFont;*/
 }
-#questions #submit {
+#questions #submit, #start #submit {
   margin-top: 20px;
+}
+#questions .normalLink, #start .normalLink {
+  position: absolute;
+  top: 430px;
+}
+#questions #about, #start #about {
+  position: absolute;
+  width: 490px;
+  height: 380px;
+  padding: 10px;
+  margin-top: 5px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#start {
+  height: 500px;
+  position: relative;
+}
+#start #startButton {
+  position: absolute;
+  width: 150px;
+  height: 4em;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: table;
+}
+#start #startButton span {
+  padding: 0;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 #footer {
@@ -57,19 +103,23 @@ body #main {
   /*font-family: 'Cinzel Decorative', cursive;*/
 }
 
-h1 {
+h1, h2 {
   font-family: "Cinzel Decorative", cursive, "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "メイリオ", Meiryo, serif;
   margin-bottom: 0px;
+}
+
+h2 {
+  margin-top: 0px;
 }
 
 hr.grad {
   margin: 0;
   border: 0;
   height: 1px;
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 }
 
 form {
@@ -92,6 +142,8 @@ form {
   color: #fff;
 }
 
+/*チェックボックス、ラジオボタンのデザイン*/
+/*=================================================*/
 .q {
   height: 50px;
 }
@@ -163,7 +215,7 @@ form {
   height: 25px;
   top: 0;
   left: 0;
-  margin-top: 0px;
+  margin-top: 10px;
   position: absolute;
   cursor: pointer;
 }
@@ -172,7 +224,7 @@ form {
   height: 25px;
   top: 0;
   left: 0;
-  margin-top: 6px;
+  margin-top: 10px;
   position: absolute;
   cursor: pointer;
 }
@@ -287,6 +339,8 @@ form {
     font-size: 80%;
   }
 }
+/*テキストボックスのデザイン*/
+/*=================================================*/
 input[type="text"], input[type="number"] {
   border: 0;
   padding: 10px;
@@ -311,6 +365,8 @@ input[type="text"]:focus, input[type="number"]:focus {
   border: solid 1px #EEA34A;
 }
 
+/*バルーン型のリンクのデザイン*/
+/*=================================================*/
 .button {
   /*バルーン*/
   position: relative;
@@ -322,7 +378,7 @@ input[type="text"]:focus, input[type="number"]:focus {
   color: #564539;
   line-height: 50px;
   text-align: center;
-  border-radius: 50px;
+  border-radius: 10px;
   z-index: 0;
   text-decoration: none;
   font-weight: bold;
@@ -376,6 +432,8 @@ input[type="text"]:focus, input[type="number"]:focus {
   color: #fff;
 }
 
+/*定義リスト（dl）のデザイン*/
+/*=================================================*/
 #dList dt {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -392,4 +450,188 @@ input[type="text"]:focus, input[type="number"]:focus {
 #dList dd li {
   margin-left: 0;
   margin-right: 20px;
+}
+
+/*リンクボタンのデザイン*/
+/*=================================================*/
+.normal_button {
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/*その他ボタン*/
+/*=================================================*/
+.normalLink {
+  height: 50px;
+  width: 150px;
+  display: table;
+  text-align: center;
+}
+.normalLink a {
+  display: table-cell;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+.widerLink {
+  height: 50px;
+  width: 250px;
+  display: table;
+  text-align: center;
+}
+.widerLink a {
+  display: table-cell;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+#snsLinks {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 50px;
+}
+#snsLinks li {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+}
+#snsLinks li a {
+  display: block;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+}
+
+/*====================================================*/
+/*色分け*/
+.normal_color {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #564539;
+}
+.normal_color:hover {
+  background-color: #564539;
+  color: #fff;
+}
+
+.twitter_color {
+  text-decoration: none;
+  border-radius: 10px;
+  position: relative;
+  background-color: #55acee;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  padding-left: 50px;
+  color: #fff;
+}
+.twitter_color:hover {
+  box-shadow: none;
+}
+.twitter_color:hover:before {
+  box-shadow: none;
+}
+.twitter_color:before {
+  position: absolute;
+  background-image: url("../img/sns/TwitterLogo_white.png");
+  border-radius: 10px 0px 0px 10px;
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-color: #55acee;
+  z-index: 1;
+  top: 0;
+  left: 0px;
+}
+
+.facebook_color {
+  text-decoration: none;
+  border-radius: 10px;
+  position: relative;
+  background-color: #3b5998;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  padding-left: 50px;
+  color: #fff;
+}
+.facebook_color:hover {
+  box-shadow: none;
+}
+.facebook_color:hover:before {
+  box-shadow: none;
+}
+.facebook_color:before {
+  position: absolute;
+  background-image: url("../img/sns/facebook.png");
+  border-radius: 10px 0px 0px 10px;
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-color: #3b5998;
+  z-index: 1;
+  top: 0;
+  left: 0px;
+}
+
+.line_color {
+  text-decoration: none;
+  border-radius: 10px;
+  position: relative;
+  background-color: #00c300;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  padding-left: 50px;
+  color: #fff;
+}
+.line_color:hover {
+  box-shadow: none;
+}
+.line_color:hover:before {
+  box-shadow: none;
+}
+.line_color:before {
+  position: absolute;
+  background-image: url("../img/sns/line.png");
+  border-radius: 10px 0px 0px 10px;
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-color: #00c300;
+  z-index: 1;
+  top: 0;
+  left: 0px;
+}
+
+.team_link {
+  text-decoration: none;
+  border-radius: 10px;
+  position: relative;
+  background-color: #00a1e9;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  padding-left: 50px;
+  color: #fff;
+}
+.team_link:hover {
+  box-shadow: none;
+}
+.team_link:hover:before {
+  box-shadow: none;
+}
+.team_link:before {
+  position: absolute;
+  background-image: url("../img/sns/simplelogo.png");
+  border-radius: 10px 0px 0px 10px;
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-color: #00a1e9;
+  z-index: 1;
+  top: 0;
+  left: 0px;
 }

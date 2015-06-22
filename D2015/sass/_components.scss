@@ -1,3 +1,6 @@
+/*チェックボックス、ラジオボタンのデザイン*/
+/*=================================================*/
+$checktopmarin:10px;
 .q {
   height: 50px;
   //margin:10px 0px;
@@ -86,7 +89,7 @@
       height: 25px;
       top: 0;
       left: 0;
-      margin-top: 0px;
+      margin-top: $checktopmarin;
       position: absolute;
       cursor: pointer;
     }
@@ -96,7 +99,7 @@
     height: 25px;
     top: 0;
     left: 0;
-    margin-top: 6px;
+    margin-top: $checktopmarin;
     position: absolute;
     cursor: pointer;
   }
