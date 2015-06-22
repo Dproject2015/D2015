@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang = "ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>About-S2 Sorting hat</title>
+	<!--スタイルシート-->
+	<!--<link rel = "stylesheet" href = "css/animsition.min.css">-->
+	<!--<link rel = "stylesheet" type ="text/css" href = "css/mycss.css" media = "all">
+	<link rel = "stylesheet" href = "css/textform.css">
+	<link rel = "stylesheet" href = "css/component.css">-->
+	<link rel="stylesheet" href="../css/main.css">
+	<!--ファビコン-->
+	<link rel="shortcut icon" href="http://cse.eedept.kobe-u.ac.jp/wp-content/uploads/2012/05/eigoUri1.png" type="image/x-icon">
+	<!--フォント-->
+	<link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700' rel='stylesheet' type='text/css'>
+	
+	<!--スクリプト-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type= "text/javascript" src = "../lib/footerFixed.js"></script>
+	<script src="../lib/jquery.fademover.js"></script>
+	<script src = "../lib/modernizr.custom.js"></script>
+	<!--リンク生成系-->
+	<script>
+	window.onload=function(){
+			var teamName = 'ライフ';
+			var teamNameEng = 'life/';
+			var linktext = 'あなたのチームは'+teamName+'チームに決まりました。-神戸大学塚本・寺田研究室-';
+			var pagelink = 'http://cse.eedept.kobe-u.ac.jp/ito/D2015/inputTest/';
+			//チームリンク生成
+			document.getElementById("teamLink").href='http://cse.eedept.kobe-u.ac.jp/portfolio/'+teamNameEng;
+			//twitterリンク生成
+			document.getElementById("twitterLink").href='https://twitter.com/intent/tweet?hashtags=S2SortingHat&text='+encodeURIComponent(linktext)+'&url='+pagelink;
+			//facebookリンク生成
+			document.getElementById("facebookLink").href='https://www.facebook.com/sharer/sharer.php?u='+pagelink;
+		}
+	</script>
+</head>
+
+<body>
+<div id = "contents">
+	<div id = "main">
+		<div id="links">
+			<div class="widerLink">
+				<!--リンク先を動的に変更-->
+				<a id = "teamLink" href="#" class="normal_button team_link" target="_blank">このチームについて</a>
+			</div>
+			<ul id="snsLinks">
+				<!--リンク先を動的に変更-->
+				<!--hrefの中身を変更してくれればOK-->
+				<li><a id = "twitterLink" href="#" class="normal_button twitter_color" onclick="window.open(this.href,'','width=650,height=450,menubar=no,toolbar=no,scrollbars=yes');return false;">ツイート</a></li>
+				<li><a id="facebookLink" href="#" class="normal_button facebook_color" onclick="window.open(this.href,'','width=650,height=450,menubar=no,toolbar=no,scrollbars=yes');return false;">シェア</a></li>
+				<li><a href="#" class="normal_button line_color" onclick="window.open(this.href,'','width=650,height=450,menubar=no,toolbar=no,scrollbars=yes');return false;">LINEに投稿</a></li>
+				<!--<li><a href="#" class="normal_button team_link">このチームについて</a></li>-->
+			</ul>
+		</div>
+	</div>
+	<div id = "footer">
+	&copy; TSUKAMOTO TERADA LABORATORY
+	</div>
+</div>
+	<script src = "lib/svgcheckbx.js"></script>
+</body>
+</html>
