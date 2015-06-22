@@ -4,7 +4,10 @@ $(function(){
 	//なんでも使える音声
 	var All = ["a-sounan","eee","illusion","sasuga","seki","sindoiwa","soredeka",
 	"sugoiyo","uwa-sugoina","wakaran","warai1","warai2","ahahasoredeka","akanwa","aso",
-	"asonan","asugoina","dream","eee2","iine_nakanaka","takaine"];
+	"asonan","asugoina","dream","eee2","iine_nakanaka","takaine","a_majide","a_sounanya",
+	"barabarayana","funfun","hahahaha","ha-i","hai_iide-su","haihai","haihai2","haihai3",
+	"haihai4","he-","naruhodo","naruhodo2","naruhodo3","nn_iiii","so-yana","so-yana2",
+	"tyotto_hanpa_janai"];
 	//寺田先生ボイスファイル
 	/*var TeraSound = ["amajide","asonanya","barabarayana","funfun","hahaha","hai",
 	"haihai","haihai2","haihai3","haihai4","he","naruhodo","naruhodo2","naruhodo3",
@@ -33,7 +36,7 @@ $(function(){
 		CreateAudio(name);
 		var count = 0;
 		//1000ms待機してから再生
-		setTimeout("sound('"+count+"')",1000);
+		setTimeout("sound('"+count+"')",800);
 		count = 1;
 		/*if(voiceflag == "Tsukamoto"){
 			//塚本先生ボイスなら
@@ -62,7 +65,7 @@ $(function(){
 });
 function CreateAudio(name){
 	var path = "sound/se/voices/";
-,	//var tsuka = "tsukamoto";
+	//var tsuka = "tsukamoto";
 	//var tera = "terada";
 	var audio = document.createElement("audio");
 	//ID要素を設定
