@@ -1,6 +1,7 @@
 $imgWidth:800px;
 $imgHeight:600px;
 $smallSkip:10px;
+$h:50px;
 $gray:rgba(0, 0, 0, 0.5);
 $alphaWhite:rgba(255,255,255,0.6);
 $clearColor:rgba(0,0,0,0);
@@ -51,6 +52,7 @@ body {
     }
   }
   #main{
+  	position: relative;
     padding-top: 40px;
     padding-bottom: 30px;
     width: $imgWidth;
@@ -68,7 +70,14 @@ body {
     	left:$smallSkip;
     	right: $smallSkip;
     }
-    position: relative;
+    /*最終ページのリンクボタン用*/
+    #links{
+    	position: absolute;
+    	top:$imgHeight - $h - 120px;
+    	right: 0;
+    	bottom: 0;
+    	left: 50px;
+    }
   }
 }
 
@@ -93,7 +102,6 @@ body {
   }
   .normalLink{
     //display: inline-block;
-    $h:50px;
     position: absolute;
     top:$imgHeight - $h - 120px;
   }

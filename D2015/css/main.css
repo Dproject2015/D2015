@@ -25,6 +25,7 @@ body > #contents {
   padding-left: 0px;
 }
 body #main {
+  position: relative;
   padding-top: 40px;
   padding-bottom: 30px;
   width: 800px;
@@ -36,7 +37,14 @@ body #main {
   margin-bottom: 0px;
   padding-left: 10px;
   padding-right: 10px;
-  position: relative;
+  /*最終ページのリンクボタン用*/
+}
+body #main #links {
+  position: absolute;
+  top: 430px;
+  right: 0;
+  bottom: 0;
+  left: 50px;
 }
 
 #questions, #start {
@@ -478,10 +486,18 @@ input[type="text"]:focus, input[type="number"]:focus {
   text-decoration: none;
 }
 
-#snsLinks {
-  margin: 0px auto;
-  height: 50px;
+ul {
+  padding: 0;
+  margin: 0;
   list-style-type: none;
+}
+
+#snsLinks {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 50px;
 }
 #snsLinks li {
   display: inline-block;

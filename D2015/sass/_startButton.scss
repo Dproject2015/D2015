@@ -91,10 +91,20 @@ $wider:250px;
 //		left: $snsH
 //	}
 //}
-#snsLinks{
-	margin:0px auto;
-	height: $snsH;
+ul{
+	padding: 0;
+	margin: 0;
 	list-style-type: none;
+}
+#snsLinks{
+	margin:{
+		top:5px;
+		bottom: 0px;
+		right: auto;
+		left: auto;
+	}
+	height: $snsH;
+	//padding: 10px;
 	li{
 		//position: relative;
 		display: inline-block;
