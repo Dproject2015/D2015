@@ -122,7 +122,7 @@
                             id: 'yourTeam',
                             type: 'text',
                             rect: ['118px', '216px', '567px', '75px', 'auto', 'auto'],
-                            text: "双見よりの<br>ウェアラブルチーム！",
+                            text: txt[Team.Num],
                             align: "center",
                             font: ['\'ヒラギノ角ゴ Pro W3\', \'Hiragino Kaku Gothic Pro\', メイリオ, Meiryo, ＭＳＰゴシック, \'MS PGothic\', sans-serif', [50, "px"], "rgba(0,0,0,1)", "400", "none solid rgb(0, 0, 0)", "normal", "break-word", ""],
                             filter: [0, 0, 1, 1, 0, 0, 0, 300, "rgba(0,0,0,0)", 0, 0, 0]

@@ -215,8 +215,8 @@
     	<!--リンク生成系-->
 	<script>
 	window.onload=function(){
-			var teamName = TeamName[6];
-			var teamNameEng = TeamNameEng[6];
+			var teamName = TeamName[Team.Num];
+			var teamNameEng = TeamNameEng[Team.Num];
 			var linktext = 'あなたのチームは'+teamName+'チームに決まりました。-神戸大学塚本・寺田研究室-';
 			var pagelink = 'http://cse.eedept.kobe-u.ac.jp/ito/D2015/inputTest/';
 			//本番のリンクは下
