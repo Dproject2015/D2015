@@ -2,12 +2,9 @@ $(function(){
 	var soundP = 70;
 	//塚本先生ボイスファイル
 	//なんでも使える音声
-	var All = ["a-sounan","eee","illusion","sasuga","seki","sindoiwa","soredeka",
-	"sugoiyo","uwa-sugoina","wakaran","warai1","warai2","ahahasoredeka","akanwa","aso",
-	"asonan","asugoina","dream","eee2","iine_nakanaka","takaine","a_majide","a_sounanya",
-	"barabara_yana","funfun","hahahaha","ha-i","hai_iide-su","haihai","haihai2","haihai3",
-	"haihai4","he-","naruhodo","naruhodo2","naruhodo3","nn_iiii","so-yana-","so-yana-2",
-	"tyotto_hanpa_janai"];
+	var All = ["a-sounan","illusion","uwa-sugoina","warai1","ahahasoredeka","aso","asugoina","dream","iine_nakanaka","takaine","a_majide","a_sounanya",
+	"barabara_yana","hahahaha","ha-i","hai_iide-su","haihai","haihai2","haihai3",
+	"haihai4","he-","naruhodo","naruhodo2","naruhodo3","nn_iiii","so-yana-","so-yana-2"];
 	//寺田先生ボイスファイル
 	/*var TeraSound = ["amajide","asonanya","barabarayana","funfun","hahaha","hai",
 	"haihai","haihai2","haihai3","haihai4","he","naruhodo","naruhodo2","naruhodo3",
