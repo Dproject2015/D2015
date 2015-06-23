@@ -2,7 +2,8 @@ $(function(){
 	var soundP = 70;
 	//塚本先生ボイスファイル
 	//なんでも使える音声
-	var All = ["a-sounan","illusion","uwa-sugoina","warai1","ahahasoredeka","aso","asugoina","dream","iine_nakanaka","takaine","a_majide","a_sounanya",
+	var All = ["a-sounan","illusion","uwa-sugoina","warai1","ahahasoredeka","aso","asugoina","dream",
+	"iine_nakanaka","takaine","a_majide","a_sounanya",
 	"barabara_yana","hahahaha","ha-i","hai_iide-su","haihai","haihai2","haihai3",
 	"haihai4","he-","naruhodo","naruhodo2","naruhodo3","nn_iiii","so-yana-","so-yana-2"];
 	//寺田先生ボイスファイル
