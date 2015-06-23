@@ -1,5 +1,5 @@
 $(function(){
-		hideLink();
+		$("#links").hide();
 		setTimeout("showLink()", 25000);
 		
 	});
