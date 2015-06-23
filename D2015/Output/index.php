@@ -188,6 +188,15 @@
 				TeamNameEng[4] = 'media/';
 				TeamNameEng[5] = 'awareness/';
 				TeamNameEng[6] = 'wearable/';
+			var Ypoint = new Array();
+				Ypoint[0] = '255';
+				Ypoint[1] = '255';
+				Ypoint[2] = '216';
+				Ypoint[3] = '216';
+				Ypoint[4] = '216';
+				Ypoint[5] = '255';
+				Ypoint[6] = '216';
+				
 			/*
 			var link_teamName = new Array();
 				link_teamName[0] = 'ライフ';

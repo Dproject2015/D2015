@@ -57,7 +57,7 @@
                             id: 'recognition',
                             type: 'image',
                             rect: ['84px', '260px', '380px', '414px', 'auto', 'auto'],
-                            fill: ["rgba(0,0,0,0)",im+"recognition.png",'0px','0px'],
+                            fill: ["rgba(0,0,0,0)",im+"awareness.png",'0px','0px'],
                             filter: [0, 0, 1, 1, 0, 0, 0, 300, "rgba(0,0,0,0)", 0, 0, 0],
                             transform: [[],[],[],['0.7','0.7']]
                         },
@@ -97,7 +97,7 @@
                             id: 'wearable2',
                             type: 'image',
                             rect: ['383px', '5px', '380px', '409px', 'auto', 'auto'],
-                            fill: ["rgba(0,0,0,0)",im+"wearable2.png",'0px','0px'],
+                            fill: ["rgba(0,0,0,0)",im+res_img[Team.Num],'0px','0px'],
                             filter: [0, 0, 1, 1, 0, 0, 0, 300, "rgba(0,0,0,0)", 0, 0, 0],
                             transform: [[],[],[],['0.75','0.75']]
                         },
@@ -105,7 +105,7 @@
                             id: 'wearable2Copy',
                             type: 'image',
                             rect: ['23px', '7px', '380px', '409px', 'auto', 'auto'],
-                            fill: ["rgba(0,0,0,0)",im+"wearable2.png",'0px','0px'],
+                            fill: ["rgba(0,0,0,0)",im+res_img[Team.Num],'0px','0px'],
                             filter: [0, 0, 1, 1, 0, 0, 0, 300, "rgba(0,0,0,0)", 0, 0, 0],
                             transform: [[],[],[],['0.75','0.75']]
                         },
@@ -122,7 +122,7 @@
                             id: 'yourTeam',
                             type: 'text',
                             rect: ['118px', '216px', '567px', '75px', 'auto', 'auto'],
-                            text: "双見よりの<br>ウェアラブルチーム！",
+                            text: txt[Team.Num],
                             align: "center",
                             font: ['\'ヒラギノ角ゴ Pro W3\', \'Hiragino Kaku Gothic Pro\', メイリオ, Meiryo, ＭＳＰゴシック, \'MS PGothic\', sans-serif', [50, "px"], "rgba(0,0,0,1)", "400", "none solid rgb(0, 0, 0)", "normal", "break-word", ""],
                             filter: [0, 0, 1, 1, 0, 0, 0, 300, "rgba(0,0,0,0)", 0, 0, 0]
@@ -179,7 +179,7 @@
                             "easeInQuart",
                             "${yourTeam}",
                             '222px',
-                            '216px'
+                            Ypoint[Team.Num]
                         ],
                         [
                             "eid199",
